@@ -7,6 +7,9 @@ intents:
   - u_nega
   - u_tiempo_cert
   - u_horarios
+  - u_festivos
+  - u_horario_secretaria
+  - u_conva_asignaturas
 
 
 responses:
@@ -29,7 +32,10 @@ responses:
   - text: "De lunes a viernes de 10 a 13 horas, y martes y jueves de 16 a 18 horas."
 
   utter_convalidaciones: # convalidaciones
-  - text: "Puedes convalidar tus asignaturas durante todo el mes de septiembre"
+  - text: "Puedes convalidar tus asignaturas durante todo el mes de septiembre -> (https://www.fpmislata.com/wordpress/secretaria/tramites/tramites-convalidaciones/)"
+
+  utter_duda:
+  - text: "Algo mas con lo que puedo aydarte?"
 
   utter_adios: # despedida
   - text: "Hasta luego amigo!"

@@ -2,10 +2,47 @@ version: "3.1"
 
 stories:
 
+# Horarios clase
 - story: horario
   steps:
   - intent: u_saludo
   - action: utter_saludo
   - intent: u_horarios
   - action: utter_horario_clases
-  - action: utter_adios
+  - action: utter_duda
+
+# Horarios secretaria
+- story: horario secretaria
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_horario_secretaria
+  - action: utter_horario_secretaria
+  - action: utter_duda
+
+# Tiempo espera certificaciones de finalizacion curso
+- story: tiempo espera certificacion
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_tiempo_cert
+  - action: utter_tiempo_espera_certificados
+  - action: utter_duda
+
+# Convalidacion asignaturas
+- story: convalidacion asignaturas
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_conva_asignaturas
+  - action: utter_convalidaciones
+  - action: utter_duda
+
+# Festivos y Vacaciones
+- story: festivos y puentes
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_festivos
+  - action: utter_festivos_vacaciones
+  - action: utter_duda
