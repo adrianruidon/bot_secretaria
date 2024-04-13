@@ -4,20 +4,19 @@ intents:
   - u_saludo
   - u_despedida
   - u_horario_clases
-# testeeo
+
+
 responses:
   utter_saludo: # saludar
   - text: "Hola que tal, con que puedo ayudarte hoy :)?"
 
   utter_anulacion_convocatoria: # anular convocatoria
-  - text: "El alumnado puede solicitar la anulación de la matrícula, perdiendo así los derechos de enseñanza y evaluación. Las solicitudes deben presentarse al menos dos meses antes del final del período lectivo. La resolución se comunica en un mes y se puede apelar. La anulación excluye al alumno de las evaluaciones y la reserva de plaza. La renuncia a convocatorias no implica la anulación de la matrícula."
+  - text: "Las solicitudes deben presentarse al menos dos meses antes del final del período lectivo. La resolución se comunica en un mes y se puede apelar. La anulación excluye al alumno de las evaluaciones y la reserva de plaza. La renuncia a convocatorias no implica la anulación de la matrícula."
 
   utter_tiempo_espera_certificados: # tiempo espera certificados
   - text: "El título tarda entre dos y tres años aproximadamente en recibirse. Se comunicará por carta al interesado/a, para su recogida."
 
   utter_horario_clases: # horarios clase
-  - text: "ESO: 1º y 2º ESO: de lunes a viernes de 8:00 a 14:00h"
-  - text: "3º y 4º ESO: lunes y martes de 8:00 a 15:00h / miércoles, jueves y viernes de 8:00 a 14:00h"
   - text: "Grupo mañana: de lunes a viernes de 8:00 a 14:00h"
   - text: "Grupo tarde: de lunes a viernes de 15:00 a 21:00h"
 
