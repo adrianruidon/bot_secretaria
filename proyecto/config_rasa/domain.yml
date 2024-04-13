@@ -20,19 +20,10 @@ responses:
   - text: "El título tarda entre dos y tres años aproximadamente en recibirse. Se comunicará por carta al interesado/a, para su recogida."
 
   utter_horario_clases: # horarios clase
-  - text: "Grupo mañana: de lunes a viernes de 8:00 a 14:00h"
-  - text: "Grupo tarde: de lunes a viernes de 15:00 a 21:00h"
+  - text: "Grupo mañana: de lunes a viernes de 8:00 a 14:00h \nGrupo tarde: de lunes a viernes de 15:00 a 21:00h"
 
   utter_festivos_vacaciones: # festivos
-  - text: "- Navidad: del 23 de diciembre al 7 de enero"
-  - text: "- Fallas: del 16 al 19 de marzo"
-  - text: "- Semana Santa: del 28 de marzo al 8 de abril"
-  - text: "- Festivos y puentes:"
-  - text: "- - -  9 octubre (Fiesta)"
-  - text: "- - -  12 al 15 de octubre (Puente)"
-  - text: "- - -  1 de noviembre (Fiesta)"
-  - text: "- - -  6 al 10 de diciembre (Puente)"
-  - text: "- - -  1 mayo (Fiesta)"
+  - text: "- Navidad: del 23 de diciembre al 7 de enero \n- Fallas: del 16 al 19 de marzo \n- Semana Santa: del 28 de marzo al 8 de abril \n- Festivos y puentes: \n- - -  9 octubre (Fiesta)\n- - -  12 al 15 de octubre (Puente)\n- - -  1 de noviembre (Fiesta)\n- - -  6 al 10 de diciembre (Puente)\n- - -  1 mayo (Fiesta)"
 
   utter_horario_secretaria: # horario secretaria
   - text: "De lunes a viernes de 10 a 13 horas, y martes y jueves de 16 a 18 horas."

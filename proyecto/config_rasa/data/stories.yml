@@ -8,4 +8,4 @@ stories:
   - action: utter_saludo
   - intent: u_horarios
   - action: utter_horario_clases
-  - action: u_despedida
+  - action: utter_adios
