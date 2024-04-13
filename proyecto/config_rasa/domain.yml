@@ -4,7 +4,7 @@ intents:
   - u_saludo
   - u_despedida
   - u_horario_clases
-
+# testeeo
 responses:
   utter_saludo: # saludar
   - text: "Hola que tal, con que puedo ayudarte hoy :)?"
