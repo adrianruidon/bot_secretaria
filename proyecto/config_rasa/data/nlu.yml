@@ -3,65 +3,73 @@ version: "3.1"
 nlu:
 - intent: u_saludo
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - hola
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - que tal
+    - que hay
+    - saludos
+    - holaaa
+    - buenas
+    - que pasa
+    - como estas
+    - como va todo
 
-- intent: goodbye
+- intent: u_despedida
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - adios
+    - hasta luego
+    - nos vemos
+    - chao
+    - hasta pronto
+    - hasta la vista
+    - buen dia
+    - que tengas un buen dia
+    - nos vemos despues
+    - hasta la proxima
+    - que te vaya bien
 
-- intent: affirm
+- intent: u_afirma
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
+    - si
+    - claro
+    - por supuesto
+    - de acuerdo
+    - suena bien
+    - correcto
 
-- intent: deny
+- intent: u_nega
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - nunca
+    - no creo
+    - no me gusta eso
+    - de ninguna manera
+    - realmente no
 
-- intent: mood_great
+- intent: u_tiempo_cert
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-    - arriba españa
+    - Cuanto tiempo se tarda en recibir las certificaciones
+    - Cual es el plazo de espera para las certificaciones
+    - Cuanto tiempo toma obtener las certificaciones
+    - Cuando puedo esperar recibir las certificaciones
+    - Cuanto dura el proceso de certificacion
+    - Cuanto tiempo se necesita para que se emitan las certificaciones
+    - Cuanto tiempo suele tardar en llegar la certificacion
+    - Cual es el tiempo de espera habitual para las certificaciones
+    - Cuanto tiempo tardan en procesarse las certificaciones
+    - Cuanto tiempo lleva obtener las certificaciones despues de solicitarlas
+
+- intent: u_horarios
+  examples: |
+    - Cual es el horario de las clases
+    - A que hora son las clases
+    - Puedes decirme los horarios de clase
+    - Cuando son las clases
+    - Podrias darme los horarios de las clases
+    - A que hora comienzan las clases
+    - A que hora terminan las clases
+    - Hay clases en la manana
+    - Hay clases en la tarde
+    - Cual es el horario de las clases de la tarde
