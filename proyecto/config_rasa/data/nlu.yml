@@ -98,7 +98,6 @@ nlu:
     - Cuando cierra la secretaria hoy
     - Esta abierta la secretaria los fines de semana
     - Cual es el horario de atencion al cliente en la secretaria
-    - La secretaria tiene horario de almuerzo
 
 - intent: u_conva_asignaturas
   examples: |
