@@ -3,7 +3,10 @@ version: "3.1"
 intents:
   - u_saludo
   - u_despedida
-  - u_horario_clases
+  - u_afirma
+  - u_nega
+  - u_tiempo_cert
+  - u_horarios
 
 
 responses:
