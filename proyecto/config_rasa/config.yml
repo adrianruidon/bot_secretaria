@@ -4,12 +4,9 @@ language: es
 
 
 pipeline:
-- name: SpacyNLP
-  model: es_core_news_md
-- name: SpacyTokenizer
-- name: SpacyEntityExtractor
-- name: SpacyFeaturizer
-  pooling: mean
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: CountVectorsFeaturizer
 - name: CountVectorsFeaturizer
   analyzer: char_wb
   min_ngram: 1
