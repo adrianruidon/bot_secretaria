@@ -1,0 +1,10 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhNL44Mac0Jb+2NhYAPuUcyg==": "utter_saludo",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhNL44Mac0Jb+WgDGlJSWpRTC1eEyJBQDJSTeS": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhNL44Mac0Jb+WgDGlJSWpRTC1ZJtC0DEZ+UWJRZn5xbW1sQCc01OK": "utter_horario_clases",
+    "eJydjlEKgCAQBa/iATqBV4lYFltIMI3dtR/x7gnZb0Z/b2AY3lzqZMrBdAI69SlaU+4BEXeypkPwohSbm4W4OT42VGsyCIa8pjrIZFXix/1dGZ7ZEiP7JN/udBtcQCF57y0XjVhydw==": "u_despedida",
+    "eJyljkEKgDAMBL/SB/iCfkUkBBswUFtJUi/Fv1tQryp624Fh2L5unauL0Ao4GufkXT0GJJzJuxMiq1FqblGS5nBqaN4VUIwl5O0hU8xILvdz5fHMlAWFs767c9owRlTSXz0IpAsFDnifGXYKs416": "action_listen"
+  }
+}
