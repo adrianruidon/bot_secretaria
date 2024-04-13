@@ -73,3 +73,42 @@ nlu:
     - Hay clases en la manana
     - Hay clases en la tarde
     - Cual es el horario de las clases de la tarde
+
+- intent: u_festivos
+  examples: |
+    - Cuales son los festivos este año
+    - Hay dias festivos proximamente
+    - Cuando son las vacaciones escolares
+    - Que dias son festivos en este mes
+    - Cuantos dias de vacaciones tengo
+    - Cuando es el proximo feriado
+    - Cual es el calendario de dias festivos
+    - Cuando son los dias de descanso oficial
+    - Cuales son los dias no laborables este mes
+    - Cuantos dias de vacaciones puedo tomar
+
+- intent: u_horario_secretaria
+  examples: |
+    - Cual es el horario de la secretaria
+    - A que horas esta abierta la secretaria
+    - Cuando puedo ir a la secretaria
+    - Que horario tiene la atencion al publico en la secretaria
+    - Puedes decirme el horario de atencion de la secretaria
+    - A que horas puedo visitar la secretaria
+    - Cuando cierra la secretaria hoy
+    - Esta abierta la secretaria los fines de semana
+    - Cual es el horario de atencion al cliente en la secretaria
+    - La secretaria tiene horario de almuerzo
+
+- intent: u_conva_asignaturas
+  examples: |
+    - Como puedo convalidar asignaturas
+    - Que debo hacer para convalidar asignaturas
+    - Cual es el proceso de convalidacion de asignaturas
+    - Donde puedo obtener informacion sobre la convalidacion de asignaturas
+    - Cuales son los requisitos para la convalidacion de asignaturas
+    - Que documentos necesito para solicitar la convalidacion de asignaturas
+    - Cuanto tiempo tarda el proceso de convalidacion de asignaturas
+    - Hay algun limite de tiempo para solicitar la convalidacion de asignaturas
+    - Como se si una asignatura es convalidable
+    - Puedo convalidar asignaturas de otros programas o universidades
