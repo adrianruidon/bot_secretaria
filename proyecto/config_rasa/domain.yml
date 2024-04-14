@@ -37,6 +37,9 @@ responses:
   utter_duda:
   - text: "Algo mas con lo que puedo aydarte?"
 
+  utter_repetir_entrada:
+  - text: "No estoy seguro de entender, ¿Puedes reformular o proporcionar mas informacion?"
+
   utter_adios: # despedida
   - text: "Hasta luego amigo!"
 

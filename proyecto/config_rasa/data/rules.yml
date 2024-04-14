@@ -7,3 +7,7 @@ rules:
   - intent: u_despedida
   - action: utter_adios
 
+- rule: pedir entrada nueva en caso de confianza NLU baja
+  steps:
+  - intent: nlu_fallback
+  - action: utter_repetir_entrada

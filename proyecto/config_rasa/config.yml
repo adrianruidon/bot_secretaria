@@ -6,12 +6,15 @@ language: es
 pipeline:
 - name: WhitespaceTokenizer
 - name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
   analyzer: char_wb
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 50
+  epochs: 100
+- name: FallbackClassifier
+  threshhold: 0.65
 
 policies: 
 - name: MemoizationPolicy
@@ -20,8 +23,8 @@ policies:
 #  max_history: 5
 #  epochs: 100
 - name: TEDPolicy
-  max_history: 2
-  epochs: 100
+  max_history: 5
+  epochs: 50
   constrain_similarities: true
 
 
