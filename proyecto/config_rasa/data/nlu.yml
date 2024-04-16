@@ -136,18 +136,6 @@ nlu:
 
 - intent: u_convo_tfg
   examples: |
-    - cuando es la convocatoria de tfg
-    - en que fechas se realiza la convocatoria de tfg
-    - cuando empieza la convocatoria de tfg
-    - como puedo participar en la convocatoria de tfg
-    - donde puedo encontrar informacion sobre la convocatoria de tfg
-    - como se si estoy inscrito en la convocatoria de tfg
-    - cuales son los requisitos para participar en la convocatoria de tfg
-    - como puedo verificar mi registro en la convocatoria de tfg
-    - hay algun plazo para inscribirse en la convocatoria de tfg
-
-- intent: u_convo_tfg
-  examples: |
     - como renuncio a la convocatoria del tfg
     - quiero anular mi participacion en la convocatoria del tfg
     - cual es el proceso para darme de baja de la convocatoria del tfg
