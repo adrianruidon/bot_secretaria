@@ -110,3 +110,150 @@ nlu:
     - Cuanto tiempo tarda el proceso de convalidacion de asignaturas
     - Hay algun limite de tiempo para solicitar la convalidacion de asignaturas
     - Como se si una asignatura es convalidable
+
+- intent: u_renuncia_convo
+  examples: |
+    - como renuncio a una convocatoria
+    - quiero anular mi participacion en la convocatoria
+    - cual es el proceso para darme de baja de una convocatoria
+    - como puedo cancelar mi inscripcion en una convocatoria
+    - necesito renunciar a una convocatoria que debo hacer
+    - quiero retirar mi postulacion de una convocatoria
+    - como eliminar mi registro de una convocatoria
+    - que pasos debo seguir para renunciar a una convocatoria
+
+- intent: u_convo_ordinaria
+  examples: |
+    - cuando es la convocatoria ordinaria
+    - en que fechas se realiza la convocatoria ordinaria
+    - cuando empieza la convocatoria ordinaria
+    - como puedo participar en la convocatoria ordinaria
+    - donde puedo encontrar informacion sobre la convocatoria ordinaria
+    - como se si estoy inscrito en la convocatoria ordinaria
+    - cuales son los requisitos para participar en la convocatoria ordinaria
+    - como puedo verificar mi registro en la convocatoria ordinaria
+    - hay algun plazo para inscribirse en la convocatoria ordinaria
+
+- intent: u_convo_tfg
+  examples: |
+    - cuando es la convocatoria de tfg
+    - en que fechas se realiza la convocatoria de tfg
+    - cuando empieza la convocatoria de tfg
+    - como puedo participar en la convocatoria de tfg
+    - donde puedo encontrar informacion sobre la convocatoria de tfg
+    - como se si estoy inscrito en la convocatoria de tfg
+    - cuales son los requisitos para participar en la convocatoria de tfg
+    - como puedo verificar mi registro en la convocatoria de tfg
+    - hay algun plazo para inscribirse en la convocatoria de tfg
+
+- intent: u_convo_tfg
+  examples: |
+    - como renuncio a la convocatoria del tfg
+    - quiero anular mi participacion en la convocatoria del tfg
+    - cual es el proceso para darme de baja de la convocatoria del tfg
+    - como puedo cancelar mi inscripcion en la convocatoria del tfg
+    - necesito renunciar a la convocatoria del tfg que debo hacer
+    - quiero retirar mi postulacion de la convocatoria del tfg
+    - como eliminar mi registro de la convocatoria del tfg
+    - que pasos debo seguir para renunciar a la convocatoria del tfg
+
+- intent: u_convo_extra
+  examples: |
+    - como renuncio a la convocatoria extraordinaria
+    - quiero anular mi participacion en la convocatoria extraordinaria
+    - cual es el proceso para darme de baja de la convocatoria extraordinaria
+    - como puedo cancelar mi inscripcion en la convocatoria extraordinaria
+    - necesito renunciar a la convocatoria extraordinaria que debo hacer
+    - quiero retirar mi postulacion de la convocatoria extraordinaria
+    - como eliminar mi registro de la convocatoria extraordinaria
+    - que pasos debo seguir para renunciar a la convocatoria extraordinaria
+
+- intent: u_becas
+  examples: |
+    - que becas hay disponibles actualmente
+    - donde puedo encontrar informacion sobre las becas disponibles
+    - cuales son los requisitos para obtener una beca
+    - que tipo de becas ofrece la institucion
+    - como puedo solicitar una beca
+    - como se si soy elegible para una beca
+    - cual es el plazo para solicitar una beca
+    - como puedo renovar mi beca
+    - que documentos necesito para solicitar una beca
+    - hay algun programa de becas para estudios en el extranjero
+
+- intent: u_becas_fecha
+  examples: |
+    - cuales son las fechas limite para solicitar becas
+    - desde cuando hasta cuando estan abiertas las convocatorias de becas
+    - cuando es la fecha limite para enviar la solicitud de beca
+    - que plazos tengo para aplicar a una beca
+    - cuando se publican los resultados de las becas
+    - hay alguna fecha limite para renovar la beca
+    - desde cuando hasta cuando puedo presentar la documentacion para la beca
+    - cual es la fecha limite para postularme a las becas
+    - cuando se anuncian las fechas de las nuevas convocatorias de becas
+    - hay algun periodo especifico para aplicar a becas de posgrado
+
+- intent: u_becas_req
+  examples: |
+    - cuales son los requisitos para obtener una beca
+    - que documentos necesito para solicitar una beca
+    - cual es el perfil que buscan en los solicitantes de becas
+    - hay algun criterio especifico para ser elegible para una beca
+    - que nivel de rendimiento academico se requiere para aplicar a una beca
+    - debo cumplir con algun requisito de ingresos para obtener una beca
+    - que experiencia previa se considera para otorgar becas
+    - hay algun requisito de residencia para solicitar becas
+    - se requiere algun tipo de recomendacion para aplicar a una beca
+    - que edad maxima se considera para ser elegible para becas
+
+- intent: u_matricula
+  examples: |
+    - como puedo realizar la matricula
+    - cuales son los pasos para inscribirme en el curso
+    - que debo hacer para matricularme en la universidad
+    - donde puedo encontrar informacion sobre la matricula
+
+- intent: u_matricula_fecha
+  examples: |
+    - cuales son las fechas limite para la matricula
+    - desde cuando hasta cuando puedo matricularme
+    - hay algun plazo para realizar la matricula
+    - cuando empieza el periodo de matricula
+
+- intent: u_matricula_docu
+  examples: |
+    - que documentos necesito para realizar la matricula
+    - cuales son los requisitos de documentacion para inscribirme
+    - que papeles debo presentar para la matricula
+    - como puedo obtener los formularios de matricula
+
+- intent: u_matricula_docu_nuevos
+  examples: |
+    - que documentos necesito como estudiante nuevo
+    - cuales son los requisitos de documentacion para nuevos alumnos
+    - que formularios debo llenar si soy un nuevo estudiante
+    - como puedo obtener mi numero de estudiante
+
+- intent: u_matricula_docu_segundo
+  examples: |
+    - que documentos necesito como estudiante de segundo ano
+    - cuales son los requisitos de documentacion para alumnos de segundo ano
+    - que formularios debo llenar si soy un estudiante de segundo ano
+    - como puedo obtener mi numero de estudiante de segundo ano
+
+- intent: u_matricula_docu_segundo_medio
+  examples: |
+    - que documentos necesito como estudiante de segundo ano de grado medio
+    - cuales son los requisitos de documentacion para alumnos de segundo ano de grado medio
+    - que formularios debo llenar si soy un estudiante de segundo ano de grado medio
+    - como puedo obtener mi numero de estudiante de segundo ano de grado medio
+
+- intent: u_matricula_docu_segundo_superior
+  examples: |
+    - que documentos necesito como estudiante de segundo ano de grado superior
+    - cuales son los requisitos de documentacion para alumnos de segundo ano de grado superior
+    - que formularios debo llenar si soy un estudiante de segundo ano de grado superior
+    - como puedo obtener mi numero de estudiante de segundo ano de grado superior
+
+
