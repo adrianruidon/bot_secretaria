@@ -10,7 +10,28 @@ intents:
   - u_festivos
   - u_horario_secretaria
   - u_conva_asignaturas
-
+  - u_renuncia_convo
+  - u_convo_ordinaria
+  - u_convo_tfg
+  - u_convo_extra
+  - u_becas
+  - u_becas_fecha
+  - u_becas_req
+  - u_matricula
+  - u_matricula_fecha
+  - u_matricula_docu
+  - u_matricula_docu_nuevos
+  - u_matricula_docu_segundo
+  - u_matricula_docu_segundo_medio
+  - u_matricula_docu_segundo_superior
+  - u_grado
+  - u_grado_medio
+  - u_grado_superior
+  - u_grado_superior_daw
+  - u_grado_superior_dam
+  - u_asir_info
+  - u_curso_espe
+  - u_curso_espe_iabd
 
 responses:
   utter_saludo: # saludar
@@ -33,6 +54,22 @@ responses:
 
   utter_convalidaciones: # convalidaciones
   - text: "Puedes convalidar tus asignaturas durante todo el mes de septiembre -> (https://www.fpmislata.com/wordpress/secretaria/tramites/tramites-convalidaciones/)"
+
+  utter_renuncia_convo:
+  - text: "Las solicitudes deben presentarse al menos dos meses antes del final del período lectivo. La resolución se comunica en un mes y se puede apelar. La anulación excluye al alumno de las evaluaciones y la reserva de plaza. La renuncia a convocatorias no implica la anulación de la matrícula."
+
+  utter_renuncia_convo_ordinaria: # Renuncia convocatoria ordinaria
+  - texto: "- Primer curso………………………………………….Hasta 20 de mayo de 2024 \n
+            - Segundo curso ciclos medios……………………. Hasta 4 de febrero de 2024 \n
+            - Segundo curso ciclos superiores……………….. Hasta 4 de febrero de 2024"
+
+  utter_renuncia_convo_ordinaria_proy: # Renuncia convocatoria ordinaria proyecto
+  - texto: "- Segundo curso ciclos superiores……………….. Hasta 9 de mayo de 2024"
+
+  utter_renuncia_convo_extraordinaria: # Renuncia convocatoria extraordinaria
+  - texto: "- Primer curso………………………………………Hasta el 30 de mayo de 2024 \n
+            - Segundo curso ciclos medios…………………….Hasta el 30 de mayo de 2024 \n
+            - Segundo curso ciclos superiores…………………Hasta el 19 de mayo de 2024"   
 
   utter_duda:
   - text: "Algo mas con lo que puedo aydarte?"
