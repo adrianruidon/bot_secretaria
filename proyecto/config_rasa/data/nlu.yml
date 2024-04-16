@@ -256,4 +256,80 @@ nlu:
     - que formularios debo llenar si soy un estudiante de segundo ano de grado superior
     - como puedo obtener mi numero de estudiante de segundo ano de grado superior
 
+- intent: u_grado
+  examples: |
+    - cuales son los grados de informatica disponibles en FP
+    - que grados de informatica puedo estudiar en formacion profesional
+    - donde puedo obtener informacion sobre los grados de informatica en FP
+    - cuales son los requisitos para acceder a los grados de informatica en FP
+    - como puedo matricularme en un grado de informatica en FP
+    - hay algun plazo para solicitar los grados de informatica en FP
+    - que salidas laborales tienen los grados de informatica en FP
+    - cual es la duracion de los grados de informatica en FP
+    - que asignaturas se cursan en los grados de informatica en FP
+    - como puedo obtener mas detalles sobre los grados de informatica en FP
 
+- intent: u_grado_medio
+  examples: |
+    - cuales son los grados medios de informatica disponibles
+    - que grados medios de informatica puedo estudiar
+    - donde puedo obtener informacion sobre los grados medios de informatica
+    - cuales son los requisitos para acceder a los grados medios de informatica
+    - como puedo matricularme en un grado medio de informatica
+    - hay algun plazo para solicitar los grados medios de informatica
+    - que salidas laborales tienen los grados medios de informatica
+    - cual es la duracion de los grados medios de informatica
+    - que asignaturas se cursan en los grados medios de informatica
+    - como puedo obtener mas detalles sobre los grados medios de informatica
+
+- intent: u_grado_superior
+  examples: |
+    - cuales son los grados superiores de informatica disponibles
+    - que grados superiores de informatica puedo estudiar
+    - donde puedo obtener informacion sobre los grados superiores de informatica
+    - cuales son los requisitos para acceder a los grados superiores de informatica
+    - como puedo matricularme en un grado superior de informatica
+    - hay algun plazo para solicitar los grados superiores de informatica
+    - que salidas laborales tienen los grados superiores de informatica
+    - cual es la duracion de los grados superiores de informatica
+    - que asignaturas se cursan en los grados superiores de informatica
+    - como puedo obtener mas detalles sobre los grados superiores de informatica
+
+- intent: u_grado_superior_daw
+  examples: |
+    - cual es la informacion sobre el grado superior de DAW
+    - donde puedo encontrar informacion sobre el grado superior de DAW
+    - que puedo saber sobre el grado superior de DAW
+    - como puedo obtener detalles sobre el grado superior de DAW
+    - hay alguna pagina web donde pueda ver mas sobre el grado superior de DAW
+    - cual es la duracion y los contenidos del grado superior de DAW
+    - que salidas laborales tiene el grado superior de DAW
+    - cuales son los requisitos para acceder al grado superior de DAW
+    - como puedo matricularme en el grado superior de DAW
+    - que asignaturas se cursan en el grado superior de DAW
+
+- intent: u_grado_superior_dam
+  examples: |
+    - cual es la informacion sobre el grado superior de DAM
+    - donde puedo encontrar informacion sobre el grado superior de DAM
+    - que puedo saber sobre el grado superior de DAM
+    - como puedo obtener detalles sobre el grado superior de DAM
+    - hay alguna pagina web donde pueda ver mas sobre el grado superior de DAM
+    - cual es la duracion y los contenidos del grado superior de DAM
+    - que salidas laborales tiene el grado superior de DAM
+    - cuales son los requisitos para acceder al grado superior de DAM
+    - como puedo matricularme en el grado superior de DAM
+    - que asignaturas se cursan en el grado superior de DAM
+
+- intent: u_asir_info
+  examples: |
+    - cual es la informacion sobre el grado superior de ASIR
+    - donde puedo encontrar informacion sobre el grado superior de ASIR
+    - que puedo saber sobre el grado superior de ASIR
+    - como puedo obtener detalles sobre el grado superior de ASIR
+    - hay alguna pagina web donde pueda ver mas sobre el grado superior de ASIR
+    - cual es la duracion y los contenidos del grado superior de ASIR
+    - que salidas laborales tiene el grado superior de ASIR
+    - cuales son los requisitos para acceder al grado superior de ASIR
+    - como puedo matricularme en el grado superior de ASIR
+    - que asignaturas se cursan en el grado superior de ASIR
