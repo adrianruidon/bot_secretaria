@@ -333,3 +333,29 @@ nlu:
     - cuales son los requisitos para acceder al grado superior de ASIR
     - como puedo matricularme en el grado superior de ASIR
     - que asignaturas se cursan en el grado superior de ASIR
+
+- intent: u_curso_espe
+  examples: |
+    - cuáles son los cursos de especialización disponibles
+    - qué cursos de especialización puedo estudiar
+    - dónde puedo obtener información sobre los cursos de especialización
+    - cuáles son los requisitos para acceder a los cursos de especialización
+    - cómo puedo matricularme en un curso de especialización
+    - hay algún plazo para solicitar los cursos de especialización
+    - qué salidas laborales tienen los cursos de especialización
+    - cuál es la duración de los cursos de especialización
+    - qué temáticas se tratan en los cursos de especialización
+    - cómo puedo obtener más detalles sobre los cursos de especialización
+
+- intent: u_curso_espe_iabd
+  examples: |
+    - cuáles son los cursos de especialización en IABD disponibles
+    - qué cursos de especialización en IABD puedo estudiar
+    - dónde puedo obtener información sobre los cursos de especialización en IABD
+    - cuáles son los requisitos para acceder a los cursos de especialización en IABD
+    - cómo puedo matricularme en un curso de especialización en IABD
+    - hay algún plazo para solicitar los cursos de especialización en IABD
+    - qué salidas laborales tienen los cursos de especialización en IABD
+    - cuál es la duración de los cursos de especialización en IABD
+    - qué temáticas se tratan en los cursos de especialización en IABD
+    - cómo puedo obtener más detalles sobre los cursos de especialización en IABD
