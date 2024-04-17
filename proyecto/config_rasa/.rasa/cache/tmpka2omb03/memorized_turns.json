@@ -1,0 +1,22 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhNL44Mac0Jb+2NhYAPuUcyg==": "utter_saludo",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhNL44Mac0Jb+WgDGlJSWpRTC1eEyJBQDJSTeS": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhNL44Mac0Jb+WgDGlJSWpRTC1ZJtC0DElmam5BfnxyalFJbW1sQCZV1S+": "utter_tiempo_espera_certificados",
+    "eJydjkEKhDAQBL+SB/iCfGWRMMQWBjQJMxMvwb9vWPUc2Vs3VBf9aefkWhEcgaJxTt61K4REO7y7y8ZqSJ2tCukMp17NuxqUtrrkc6CpZpCH/dsyPGOMveQQIfbu0T2AFgj9drxypCXrUD9/Ae0Pec0=": "utter_duda",
+    "eJytjksKAjEQRK+SA3iCXEUkNEkJDTNJ6I+bMHc36LiOiLsqePWo6zguYXTBI1E2bjWG8Q6p0o4YzrKxGupkXSGT4TqrxeBJafPSjoXGzSAf9mfL8owx9t5Shth3j84BtEPoteM7ZypN/6IvXmgpuj0BonuVvg==": "action_listen",
+    "eJydjkEKwCAMBL+SB/QFfqUUCTYUwcZiEi/i3yu0PQu97cAw7Nr6Au0qVD0GjZkdtGd4xpMcvJCiKPFwTagMJ/JAdWBeMNme+yRjqlQ+93dleiZkruhR4sGoVlB6326dWFc7": "utter_convalidaciones",
+    "eJydjksKgDAMRK/SA3iCXkWkhDZIoKbSJG6Kd7f4WSvuMuTNY8a2D66tFbcAUamwd+06AsOC3t0hkyhyZ02wdoa4R/XOgkC2VPYXjalifdjfltcxsfAGAYRmBrUK8m3XWcuUIPYPykfzdABncno9": "utter_duda",
+    "eJytjksKwzAMRK/iA+QEvkoJZrBFEbhysaRsTO5e0886IXSnQW8ecxv7Esaz05aQjZvEMD5HEjwohm+orEYyWVfqk2GZ0WLwpKhe2n6gcTPqP/ay5XBMbrIhQfkuMO/Qc7vetcoFeX5I/2guXnBSt74AyX6Yqw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhNL44Mac0Jb+WgDGlJSWpRTC1ZJtC0DEZ+UWJRZn5xbW1sQCc01OK": "utter_horario_clases",
+    "eJydjlEKgCAQBa/iATqBV4lYFltIMI3dtR/x7gnZb0Z/b2AY3lzqZMrBdAI69SlaU+4BEXeypkPwohSbm4W4OT42VGsyCIa8pjrIZFXix/1dGZ7ZEiP7JN/udBtcQCF57y0XjVhydw==": "utter_duda",
+    "eJyljksKgCAURbfiAlqBW4mQhz5IMI33aSLtPaGaZtTsHjgc7lj3wdSVcHPgJZZsTT2Hy7CgNRekyIK5ucpIzYm5oVijjiFpKHsnoyJIt/u50j0zFwKKhd/duWznEzDy/17QAM+V6QCBj400": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhNL44Mac0Jb+WgDGlJSWpRTC1ZJtC0DFpqcUlmWX5xbW1sQCdCVOW": "utter_festivos_vacaciones",
+    "eJydjlEKgCAQRK/iATqBV4lYFttAMA139Ue8ewvlb0V/M8zjMXPrk2lHpgroxKdoTbsCRNzJmrsEz0JR2cKUlfFRq1hTgDGUNfUXTRGhPNjfltczG7H4mvjbnUFDRYdOV+Jn6XIC29x0rw==": "utter_duda",
+    "eJyljlEKgCAQRK/iATqBV4mQRTcQTMPd9Ue8e0L5W1F/M8zjMXNtk6p7xmLAsk9Rq3oGE2FDra4SPDHGzgph7oyPvbJWYgiCuNQeNMKMebCfLY9nViT2JdG7O4M2BSzYviL9lzpxcG9ZDmuoj3g=": "action_listen",
+    "eJydjkEKgDAMBL/SB/iCfkWkhBowUBtJUy8lfzegngVvszAMOw+bwjgEzwRZiWsM44ZUYccYnlGoKVZ3e0Nxh6pPjaGnBqWvbB+Zroryur8rn2c2FhDi1DALqiOYLRf1P1eZ": "utter_horario_secretaria",
+    "eJydjlEKgCAQRK/iATqBV4mQxRYSzI3dtR/x7gnVX6D0NwNvHjOXOplyMJ4OvAZK1pQ7uAQ7WvOUGEQxNTYLcmNCalWtyU4g5pVqR5NVkV/2t6V7ZiMGDuQEPaO2CGPHPnaD9uUC1BN8PQ==": "utter_duda",
+    "eJytjlEKgCAQRK/iATqBV4mQRRcSTGPd7Ue8e0L1FyjR3wy8ecxc6qTKTngYsOxT1KpcwUTYUKu7BJ8ZY2MlIzXGx1ZZKzEZgrhUOxphRnrYz5bumTURkE8moyXkFmHs2MvuR7sTN+xbTm+Umwk=": "action_listen"
+  }
+}

@@ -58,37 +58,61 @@ responses:
   utter_renuncia_convo:
   - text: "Las solicitudes deben presentarse al menos dos meses antes del final del período lectivo. La resolución se comunica en un mes y se puede apelar. La anulación excluye al alumno de las evaluaciones y la reserva de plaza. La renuncia a convocatorias no implica la anulación de la matrícula."
 
+  utter_pregunta_renuncia_conv:
+  - text: "\nCual de las convocatorias te gustaria renunciar?\n\n
+            - Convocatoria ordinaria\n
+            - Convocatoria TFG\n
+            - Convocatoria extraordinaria"
+
   utter_renuncia_convo_ordinaria: # Renuncia convocatoria ordinaria
-  - text: "- Primer curso………………………………………….Hasta 20 de mayo de 2024 \n
-            - Segundo curso ciclos medios……………………. Hasta 4 de febrero de 2024 \n
-            - Segundo curso ciclos superiores……………….. Hasta 4 de febrero de 2024"
+  - text: "- Primer curso…………………………………………Hasta 20 de mayo de 2024 \n
+           - Segundo curso ciclos medios……………………Hasta 4 de febrero de 2024 \n
+           - Segundo curso ciclos superiores………………Hasta 4 de febrero de 2024"
 
   utter_renuncia_convo_ordinaria_tfg: # Renuncia convocatoria ordinaria TFG
-  - text: "- Segundo curso ciclos superiores……………….. Hasta 9 de mayo de 2024"
+  - text: "- Segundo curso ciclos superiores………………Hasta 9 de mayo de 2024"
 
   utter_renuncia_convo_extraordinaria: # Renuncia convocatoria extraordinaria
   - text: "- Primer curso………………………………………Hasta el 30 de mayo de 2024 \n
-            - Segundo curso ciclos medios…………………….Hasta el 30 de mayo de 2024 \n
-            - Segundo curso ciclos superiores…………………Hasta el 19 de mayo de 2024"   
+           - Segundo curso ciclos medios……………………Hasta el 30 de mayo de 2024 \n
+           - Segundo curso ciclos superiores…………………Hasta el 19 de mayo de 2024"   
 
   utter_becas: # Becas
   - text: "Plazo de presentación de solicitudes:ABIERTO desde el 19 de marzo de 2024 a las 09:00 hasta el 10 de mayo de 2024 a las 15:00"
   
+  # utter_becas_requisitos: # Requisitos para la beca
+  # - text: "DATOS OBLIGATORIOS \n\n
+  #         NIF/NIE/PASAPORTE del solicitante \n
+  #         NIF/NIE/PASAPORTE de los miembros de la unidad familiar \n
+  #         Certificación de estudios, de matrícula, notas o calificaciones \n
+  #         DATOS NO OBLIGATORIOS \n\n
+  #         Acreditación de la independencia \n
+  #         Justificación de la situación familiar \n
+  #         Certificados de empadronamiento o convivencia \n
+  #         Acreditación de la monoparentalidad o custodia \n
+  #         Presentar contrato de alquiler \n
+  #         Título de familia numerosa \n
+  #         Certificado de minusvalía \n
+  #         Justificación de hermanos residen fuera domicilio \n
+  #         Acreditación de la orfandad absoluta \n"
+
   utter_becas_requisitos: # Requisitos para la beca
-  - text: "DATOS OBLIGATORIOS \n\n
-          NIF/NIE/PASAPORTE del solicitante \n
-          NIF/NIE/PASAPORTE de los miembros de la unidad familiar \n
-          Certificación de estudios, de matrícula, notas o calificaciones \n
-		      DATOS NO OBLIGATORIOS \n\n
-          Acreditación de la independencia \n
-          Justificación de la situación familiar \n
-          Certificados de empadronamiento o convivencia \n
-          Acreditación de la monoparentalidad o custodia \n
-          Presentar contrato de alquiler \n
-          Título de familia numerosa \n
-          Certificado de minusvalía \n
-          Justificación de hermanos residen fuera domicilio \n
-          Acreditación de la orfandad absoluta \n"
+  - text: |
+      **DATOS OBLIGATORIOS**
+      - NIF/NIE/PASAPORTE del solicitante
+      - NIF/NIE/PASAPORTE de los miembros de la unidad familiar
+      - Certificación de estudios, de matrícula, notas o calificaciones
+      
+      **DATOS NO OBLIGATORIOS**
+      - Acreditación de la independencia
+      - Justificación de la situación familiar
+      - Certificados de empadronamiento o convivencia
+      - Acreditación de la monoparentalidad o custodia
+      - Presentar contrato de alquiler
+      - Título de familia numerosa
+      - Certificado de minusvalía
+      - Justificación de hermanos residen fuera domicilio
+      - Acreditación de la orfandad absoluta
 
   utter_duda:
   - text: "Algo mas con lo que puedo aydarte?"
@@ -105,4 +129,3 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-# xd

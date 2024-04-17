@@ -2,7 +2,7 @@ version: "3.1"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: decir adios(
   steps:
   - intent: u_despedida
   - action: utter_adios
@@ -11,3 +11,28 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_repetir_entrada
+
+- rule: horario clases
+  steps:
+  - intent: u_horarios
+  - action: utter_horario_clases
+
+- rule: horario secretaria
+  steps:
+  - intent: u_horario_secretaria
+  - action: utter_horario_secretaria
+
+- rule: festivos y vacaciones
+  steps:
+  - intent: u_festivos
+  - action: utter_festivos_vacaciones
+
+- rule: tiempo de espera para certificaciones
+  steps:
+  - intent: u_tiempo_cert
+  - action: utter_tiempo_espera_certificados
+
+- rule: tiempo para realizar convalidaciones
+  steps:
+  - intent: u_conva_asignaturas
+  - action: utter_convalidaciones
