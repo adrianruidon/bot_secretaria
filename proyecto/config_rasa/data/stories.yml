@@ -47,6 +47,12 @@ stories:
 #   - action: utter_festivos_vacaciones
 #   - action: utter_duda
 
+
+# --------------------------------------------------------#
+# -------------  RENUNCIA CONVOCATORIAS  -----------------#
+# --------------------------------------------------------#
+
+
 # Renuncia convocatoria ordinaria
 - story: renuncia de convocatoria ordinaria
   steps:
@@ -57,6 +63,7 @@ stories:
   - action: utter_pregunta_renuncia_conv
   - intent: u_convo_ordinaria
   - action: utter_renuncia_convo_ordinaria
+  - action: utter_renuncia_convo_link
 
 # Renuncia convocatoria TFG
 - story: renuncia de convocatoria TFG
@@ -68,6 +75,7 @@ stories:
   - action: utter_pregunta_renuncia_conv
   - intent: u_convo_tfg
   - action: utter_renuncia_convo_ordinaria_tfg
+  - action: utter_renuncia_convo_link
 
 # Renuncia convocatoria extraordinaria
 - story: renuncia de convocatoria extraordinaria
@@ -79,3 +87,56 @@ stories:
   - action: utter_pregunta_renuncia_conv
   - intent: u_convo_extra
   - action: utter_renuncia_convo_extraordinaria
+  - action: utter_renuncia_convo_link
+
+
+# --------------------------------------------------------#
+# ----------------------   BECAS  ------------------------#
+# --------------------------------------------------------#
+
+
+# Becas: conocer solo los plazos
+- story: conocer plazos de beca
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_becas_fecha
+  - action: utter_becas
+  - action: utter_conocer_requisitos_becas
+  - intent: u_nega
+  - action: utter_adios
+
+# Becas: conocer solo requisitos
+- story: conocer requisitos becas
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_becas_req
+  - action: utter_becas_requisitos
+  - action: utter_conocer_fechas_becas
+  - intent: u_nega
+  - action: utter_adios
+
+# Becas: plazos y requisitos
+- story: conocer plazos de beca
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_becas_fecha
+  - action: utter_becas
+  - action: utter_conocer_requisitos_becas
+  - intent: u_afirma
+  - action: utter_becas_requisitos
+  - action: utter_adios
+
+# Becas: plazos y requisitos 2
+- story: conocer plazos de beca 2
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_becas_req
+  - action: utter_becas_requisitos
+  - action: utter_conocer_fechas_becas
+  - intent: u_afirma
+  - action: utter_becas
+  - action: utter_adios
