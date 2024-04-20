@@ -173,6 +173,26 @@ responses:
             - - Comunicado al Alumnado\n
             - - Modelo de solicitud de consentimiento para la recogida de datos (firmado)\n"
 
+
+  utter_matric_ya_matriculados_gm:
+  - text: "- Descarga y completa el formulario de matrícula.\n
+           - Realiza un ingreso o transferencia de 5 € a la cuenta de CAJAMAR, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
+           - ES76 3058 2015 8927 2030 2910 TITULAR: CIPFP MISLATA IMPORTE: 5 € CONCEPTO: NOMBRE Y APELLIDOS ALUMNO/A SEGUIDO DE '23/24'\n
+           - Envía por correo electrónico a 'matricula_grado_medio@fpmislata.com' la siguiente documentación del 8 al 17 de mayo de 2023:\n
+           - - Formulario de matrícula 2023/24.\n
+           - - Justificante de la transferencia o ingreso.\n
+           - - En caso de ciclos con doble turno y solicitud de cambio, adjunta la justificación de los motivos.\n
+           - - En el asunto del correo electrónico, indica las siglas del ciclo formativo seguido del nombre y apellidos del alumno.\n"
+
+  utter_matric_ya_matriculados_gs:
+  - text: "- Descarga y completa el formulario de matrícula.
+           - Realiza un ingreso o transferencia de 5 € a la cuenta de CAJAMAR, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
+           - ES76 3058 2015 8927 2030 2910 TITULAR: CIPFP MISLATA IMPORTE: 5 € CONCEPTO: NOMBRE Y APELLIDOS ALUMNO/A SEGUIDO DE '23/24'\n
+           - Envía por correo electrónico a matricula_grado_superior@fpmislata.com, del 8 al 17 de mayo de 2023, la siguiente documentación:\n
+           - - Formulario de matrícula completado.\n
+           - - Justificante de la transferencia.\n
+           - - En caso de solicitud de cambio de turno, adjunta la justificación de los motivos.\n
+           - - En el asunto del correo electrónico, indica las siglas del ciclo formativo seguido del nombre y apellidos del alumno.\n"
 # --------------------------------------------------------#
 # ---------------------   RANDOM     ---------------------#
 # --------------------------------------------------------#
