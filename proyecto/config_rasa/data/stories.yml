@@ -246,7 +246,7 @@ stories:
   - intent: u_afirma
   - action: utter_matric_preguntar_si_matriculado
   - intent: u_afirma
-
+#
   - action: utter_matric_nuevos_gradomedio_y_gradosuperior
   - action: utter_matric_conocer_instruciones_alumn_nuevos
   - intent: u_afirma
