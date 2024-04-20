@@ -264,17 +264,13 @@ nlu:
     - que grados hay disponibles
     - que grados de informatica puedo estudiar
     - que fp hay disponible
-    - cuales son los requisitos para acceder a los grados de informatica en FP
     - como puedo matricularme en un grado de informatica en FP
     - hay algun plazo para solicitar los grados de informatica en FP
-    - que salidas laborales tienen los grados de informatica en FP
-    - cual es la duracion de los grados de informatica en FP
     - que asignaturas se cursan en los grados de informatica en FP
     - como puedo obtener mas detalles sobre los grados de informatica en FP
 
 - intent: u_grado_medio
   examples: |
-    - cuales son los grados medios de informatica disponibles
     - que grados medios de informatica puedo estudiar
     - donde puedo obtener informacion sobre los grados medios de informatica
     - cuales son los requisitos para acceder a los grados medios de informatica
@@ -288,10 +284,8 @@ nlu:
 - intent: u_grado_superior
   examples: |
     - cuales son los grados superiores de informatica disponibles
-    - que grados superiores de informatica puedo estudiar
-    - donde puedo obtener informacion sobre los grados superiores de informatica
     - cuales son los requisitos para acceder a los grados superiores de informatica
-    - como puedo matricularme en un grado superior de informatica
+    - como me matriculo en un grado superior de informatica
     - hay algun plazo para solicitar los grados superiores de informatica
     - que salidas laborales tienen los grados superiores de informatica
     - cual es la duracion de los grados superiores de informatica
@@ -300,8 +294,6 @@ nlu:
 
 - intent: u_grado_superior_daw
   examples: |
-    - cual es la informacion sobre el grado superior de DAW
-    - donde puedo encontrar informacion sobre el grado superior de DAW
     - que puedo saber sobre el grado superior de DAW
     - como puedo obtener detalles sobre el grado superior de DAW
     - hay alguna pagina web donde pueda ver mas sobre el grado superior de DAW
@@ -314,9 +306,6 @@ nlu:
 - intent: u_grado_superior_dam
   examples: |
     - cual es la informacion sobre el grado superior de DAM
-    - donde puedo encontrar informacion sobre el grado superior de DAM
-    - que puedo saber sobre el grado superior de DAM
-    - como puedo obtener detalles sobre el grado superior de DAM
     - hay alguna pagina web donde pueda ver mas sobre el grado superior de DAM
     - cual es la duracion y los contenidos del grado superior de DAM
     - que salidas laborales tiene el grado superior de DAM
