@@ -261,6 +261,7 @@ nlu:
 
 - intent: u_grado
   examples: |
+    - grado
     - que grados hay disponibles de informatica
     - que grados de informatica puedo estudiar
     - que fp hay disponible de informatica
@@ -300,6 +301,7 @@ nlu:
 
 - intent: u_grado_superior_daw
   examples: |
+    - daw
     - que puedo saber sobre el grado superior de DAW
     - como puedo obtener detalles sobre el grado superior de DAW
     - hay alguna pagina web donde pueda ver mas sobre el grado superior de DAW
@@ -311,6 +313,7 @@ nlu:
 
 - intent: u_grado_superior_dam
   examples: |
+    - dam
     - cual es la informacion sobre el grado superior de DAM
     - hay alguna pagina web donde pueda ver mas sobre el grado superior de DAM
     - cual es la duracion y los contenidos del grado superior de DAM
@@ -319,8 +322,9 @@ nlu:
     - como puedo matricularme en el grado superior de DAM
     - que asignaturas se cursan en el grado superior de DAM
 
-- intent: u_asir_info
+- intent: u_grado_superior_asir
   examples: |
+    - asir
     - que asignaturas se dan en asir
     - que se da en asir
     - pasame la informacion de asir
@@ -333,7 +337,7 @@ nlu:
 
 - intent: u_curso_espe
   examples: |
-    - Master
+    - master
     - cuales son los cursos de especializacion disponibles
     - que cursos de especializacion puedo estudiar
     - donde puedo obtener informacion sobre los cursos de especializacion

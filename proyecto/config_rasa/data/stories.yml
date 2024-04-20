@@ -48,6 +48,7 @@ stories:
 #   - action: utter_duda
 
 
+
 # --------------------------------------------------------#
 # -------------  RENUNCIA CONVOCATORIAS  -----------------#
 # --------------------------------------------------------#
@@ -88,6 +89,7 @@ stories:
   - intent: u_convo_extra
   - action: utter_renuncia_convo_extraordinaria
   - action: utter_renuncia_convo_link
+
 
 
 # --------------------------------------------------------#
@@ -140,6 +142,7 @@ stories:
   - intent: u_afirma
   - action: utter_becas
   - action: utter_adios
+
 
 
 # --------------------------------------------------------#
@@ -300,12 +303,40 @@ stories:
   - action: utter_adios
 
 
+
 # --------------------------------------------------------#
 # ---------------  Oferta Informatica  -------------------#
 # --------------------------------------------------------#
-# 
-#
-- story: grado medio (solo uno)
+
+
+# ----------------------   GM   --------------------------#
+- story: grado medio (solo uno) / no horario
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_grado_medio
+  - action: utter_inform_texto_cursos # los cursos que hay:
+  - action: utter_inform_grado_medio_smr # 1. smr
+  - action: utter_inform_conocer_modulos
+  - intent: u_nega
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado medio (solo uno) / no horario semi corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_medio
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_medio_smr
+  - action: utter_inform_conocer_modulos
+  - intent: u_nega
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado medio (solo uno) / si horario
   steps:
   - intent: u_saludo
   - action: utter_saludo
@@ -313,13 +344,390 @@ stories:
   - action: utter_inform_pregunta_que_estudiar
   - intent: u_grado_medio
   - action: utter_inform_texto_cursos
-  - action: 
+  - action: utter_inform_grado_medio_smr
+  - action: utter_inform_conocer_modulos
+  - intent: u_nega
+  - action: utter_inform_grado_medio_smr_modulos
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
 
+- story: grado medio (solo uno) / si horario semi corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_medio
+  - action: utter_inform_texto_cursos # los cursos que hay:
+  - action: utter_inform_grado_medio_smr # 1. smr
+  - action: utter_inform_conocer_modulos
+  - intent: u_nega
+  - action: utter_inform_grado_medio_smr_modulos
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
 
-- story: grado superior
+# ----------------------   GS   --------------------------#
+- story: grado superior sin informacion extra
   steps:
   - intent: u_saludo
   - action: utter_saludo
   - intent: u_grado
   - action: utter_inform_pregunta_que_estudiar
-  - intent: u_grado_medio
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_nega
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado superior sin informacion extra semi corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_nega
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+# ----------------------   DAM  --------------------------#
+- story: grado superior DAM largo
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_afirma
+  - action: utter_inform_conocer_modulos_tonto
+  - intent: u_grado_superior_dam
+  - action: utter_inform_grado_superior_dam_modulos
+  - action: utter_inform_grado_superior_dam_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado superior DAM semi corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_grado_superior_dam
+  - action: utter_inform_grado_superior_dam_modulos
+  - action: utter_inform_grado_superior_dam_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+# - story: grado superior DAM corto (EJEMPLO VIEJO)
+#   steps:
+#   - intent: u_saludo
+#   - action: utter_saludo
+#   - intent: u_grado
+#   - action: utter_inform_pregunta_que_estudiar
+#   - intent: u_grado_superior
+#   - action: utter_inform_texto_cursos
+#   - action: utter_inform_grado_superior_dam
+#   - action: utter_inform_grado_superior_daw
+#   - action: utter_inform_grado_superior_asir
+#   - action: utter_inform_conocer_modulos_multiple
+#   - intent: u_grado_superior_dam
+#   - action: utter_inform_grado_superior_dam_modulos
+#   - action: utter_inform_grado_superior_dam_video
+#   - action: utter_inform_responder_con_link
+#   - action: utter_adios
+
+- story: grado superior DAM muy corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_superior_dam
+  - action: utter_inform_grado_superior_dam_modulos
+  - action: utter_inform_grado_superior_dam_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+# ----------------------   DAW  --------------------------#
+- story: grado superior DAW largo
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_afirma
+  - action: utter_inform_conocer_modulos_tonto
+  - intent: u_grado_superior_daw
+  - action: utter_inform_grado_superior_daw_modulos
+  - action: utter_inform_grado_superior_daw_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado superior DAW corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_grado_superior_daw
+  - action: utter_inform_grado_superior_daw_modulos
+  - action: utter_inform_grado_superior_daw_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado superior DAW semi corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_grado_superior_daw
+  - action: utter_inform_grado_superior_daw_modulos
+  - action: utter_inform_grado_superior_daw_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado superior DAW muy corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_superior_daw
+  - action: utter_inform_grado_superior_daw_modulos
+  - action: utter_inform_grado_superior_daw_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+# ----------------------  ASIR  --------------------------#
+- story: grado superior ASIR largo
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_afirma
+  - action: utter_inform_conocer_modulos_tonto
+  - intent: u_grado_superior_asir
+  - action: utter_inform_grado_superior_asir_modulos
+  - action: utter_inform_grado_superior_asir_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado superior ASIR corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_grado_superior_asir
+  - action: utter_inform_grado_superior_asir_modulos
+  - action: utter_inform_grado_superior_asir_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado superior ASIR semi corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_superior
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_superior_dam
+  - action: utter_inform_grado_superior_daw
+  - action: utter_inform_grado_superior_asir
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_grado_superior_asir
+  - action: utter_inform_grado_superior_asir_modulos
+  - action: utter_inform_grado_superior_asir_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: grado superior ASIR muy corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_superior_asir
+  - action: utter_inform_grado_superior_asir_modulos
+  - action: utter_inform_grado_superior_asir_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+# ----------------------  MASTER --------------------------#
+- story: master IABD largo
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_curso_espe
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_master_iabd
+  - action: utter_inform_grado_master_ciber
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_nega
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+# ----------------------  IABD  --------------------------#
+- story: master IABD largo
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_curso_espe
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_master_iabd
+  - action: utter_inform_grado_master_ciber
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_afirma
+  - action: utter_inform_conocer_modulos_tonto
+  - intent: u_curso_espe_iabd
+  - action: utter_inform_grado_master_iabd_modulos
+  - action: utter_inform_grado_master_iabd_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: master IABD corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_curso_espe
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_master_iabd
+  - action: utter_inform_grado_master_ciber
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_curso_espe_iabd
+  - action: utter_inform_grado_master_iabd_modulos
+  - action: utter_inform_grado_master_iabd_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: master IABD semi corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_curso_espe
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_master_iabd
+  - action: utter_inform_grado_master_ciber
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_curso_espe_iabd
+  - action: utter_inform_grado_master_iabd_modulos
+  - action: utter_inform_grado_master_iabd_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: master IABD muy corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_curso_espe_iabd
+  - action: utter_inform_grado_master_iabd_modulos
+  - action: utter_inform_grado_master_iabd_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+
+# ---------------------- CIBER  --------------------------#
+- story: master ciberseguridad largo
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_curso_espe
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_master_iabd
+  - action: utter_inform_grado_master_ciber
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_afirma
+  - action: utter_inform_conocer_modulos_tonto
+  - intent: u_curso_espe_ciberseguridad
+  - action: utter_inform_grado_master_ciber_modulos
+  - action: utter_inform_grado_master_ciber_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: master ciberseguridad corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_curso_espe
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_master_iabd
+  - action: utter_inform_grado_master_ciber
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_curso_espe_ciberseguridad
+  - action: utter_inform_grado_master_ciber_modulos
+  - action: utter_inform_grado_master_ciber_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: master ciberseguridad semi corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_curso_espe
+  - action: utter_inform_texto_cursos
+  - action: utter_inform_grado_master_iabd
+  - action: utter_inform_grado_master_ciber
+  - action: utter_inform_conocer_modulos_multiple
+  - intent: u_curso_espe_ciberseguridad
+  - action: utter_inform_grado_master_ciber_modulos
+  - action: utter_inform_grado_master_ciber_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+
+- story: master ciberseguridad muy corto
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_curso_espe_ciberseguridad
+  - action: utter_inform_grado_master_ciber_modulos
+  - action: utter_inform_grado_master_ciber_video
+  - action: utter_inform_responder_con_link
+  - action: utter_adios
+

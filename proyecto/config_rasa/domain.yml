@@ -29,7 +29,7 @@ intents:
   - u_grado_superior
   - u_grado_superior_daw
   - u_grado_superior_dam
-  - u_asir_info
+  - u_grado_superior_asir
   - u_curso_espe
   - u_curso_espe_iabd
 
@@ -70,6 +70,7 @@ responses:
   - text: "\nPuedes convalidar tus asignaturas durante todo el mes de septiembre -> (https://www.fpmislata.com/wordpress/secretaria/tramites/tramites-convalidaciones/)\n"
 
 
+
 # --------------------------------------------------------#
 # -------------  RENUNCIA CONVOCATORIAS  -----------------#
 # --------------------------------------------------------#
@@ -105,6 +106,7 @@ responses:
            https://www.fpmislata.com/wordpress/secretaria/tramites/renuncia-convocatorias/\n"
 
 
+
 # --------------------------------------------------------#
 # ----------------------   BECAS  ------------------------#
 # --------------------------------------------------------#
@@ -134,6 +136,7 @@ responses:
           Certificado de minusvalía \n
           Justificación de hermanos residen fuera domicilio \n
           Acreditación de la orfandad absoluta\n"
+
 
 
 # --------------------------------------------------------#
@@ -204,6 +207,7 @@ responses:
            - - En el asunto del correo electrónico, indica las siglas del ciclo formativo seguido del nombre y apellidos del alumno.\n"
 
 
+
 # --------------------------------------------------------#
 # -------------------   INFORMATICA  ---------------------#
 # --------------------------------------------------------#
@@ -215,10 +219,146 @@ responses:
   - text: "Que grado te gustaria estudiar Medio o Superior? O un Master?\n"
 
   utter_inform_responder_con_link:
-  - text: "https://www.fpmislata.com/wordpress/formacion/ciclos-formativos-informatica-smr-daw-dam-asir/\n"
+  - text: "Puedes encontrar mas informacion aqui :\n
+           https://www.fpmislata.com/wordpress/formacion/ciclos-formativos-informatica-smr-daw-dam-asir/ \n\n"
 
-  utter_inform_grado_medio_smr:
-  - text: "SMR - SISTEMAS MICROINFORMÁTICOS Y REDES\n"
+  utter_inform_conocer_modulos:
+  - text: "Te gustaria conocer los modulos que hay dentro de este curso?\n"
+
+  utter_inform_conocer_modulos_multiple:
+  - text: "Te gustaria conocer los modulos de alguno de estos cursos en especifico?\n\n"
+
+  utter_inform_conocer_modulos_tonto:
+  - text: "Y de cual curso te gustaria obtener mas informacion?"
+
+  utter_inform_grado_medio_smr: # Grado medio
+  - text: "SMR - SISTEMAS MICROINFORMÁTICOS Y REDES\n\n"
+
+# ----------------------   SMR  --------------------------#
+  utter_inform_grado_medio_smr_modulos:
+  - text: " Modulos para SMR:
+           - Montaje y mantenimiento de equipo.\n
+           - Aplicaciones ofimáticas.\n
+           - Sistemas operativos monopuesto.\n
+           - Redes locales.\n
+           - Servicios en red.\n\n
+           - Sistemas operativos en red.\n
+           - Seguridad informática.\n
+           - Aplicaciones web.\n
+           - Formación y orientación laboral. (F.O.L.)\n
+           - Empresa e iniciativa empresarial.\n
+           - Formación en centros de trabajo.\n\n"
+
+  utter_inform_grado_medio_smr_video:
+  - text: "Puede ver este video para un poco mas de informacion :)\n
+           https://www.youtube.com/watch?v=qclg1ORVI3E&ab_channel=CIPFPMislata \n\n "
+
+# ----------------------   DAM  --------------------------#
+  utter_inform_grado_superior_dam: # Grado superior
+  - text: "DAM - DESARROLLO DE APLICACIONES MULTIPLATAFORMA (SEMIPRESENCIAL)\n\n"
+
+  utter_inform_grado_superior_dam_modulos:
+  - text: " Modulos para DAM:
+           - Sistemas informáticos.\n
+           - Bases de Datos.\n
+           - Programación.\n
+           - Lenguajes de marcas y sistemas de gestión de información.\n
+           - Entornos de desarrollo.\n
+           - Acceso a datos.\n
+           - Desarrollo de interfaces.\n\n
+           - Programación multimedia y dispositivos móviles.\n
+           - Programación de servicios y procesos.\n
+           - Sistemas de gestión empresarial.\n
+           - Proyecto de desarrollo de aplicaciones multiplataforma.\n
+           - Formación y orientación laboral.\n
+           - Empresa e iniciativa emprendedora.\n
+           - Formación en centros de trabajo.\n\n"
+
+  utter_inform_grado_superior_dam_video:
+  - text: "Puede ver este video para un poco mas de informacion :)\n
+           https://www.youtube.com/watch?v=wypnl5Lo4Nw&ab_channel=CIPFPMislata \n\n"
+
+# ----------------------   DAW  --------------------------#
+  utter_inform_grado_superior_daw: # Grado superior
+  - text: "DAW - DESARROLLO DE APLICACIONES WEB\n\n"
+
+  utter_inform_grado_superior_daw_modulos:
+  - text: " Modulos para DAW:
+           - Sistemas informáticos.\n
+           - Bases de datos.\n
+           - Programación.\n
+           - Lenguajes de marcas y sistemas de gestión de información.\n
+           - Entornos de desarrollo.\n
+           - Desarrollo web en entorno cliente.\n\n
+           - Desarrollo web en entorno servidor.\n
+           - Despliegue de aplicaciones web.\n
+           - Diseño de interfaces WEB.\n
+           - Proyecto de desarrollo de aplicaciones web\n
+           - Formación y orientación laboral.\n
+           - Empresa e iniciativa emprendedora.\n
+           - Formación en centros de trabajo.\n\n"
+
+  utter_inform_grado_superior_daw_video:
+  - text: "Puede ver este video para un poco mas de informacion :)\n
+          https://www.youtube.com/watch?v=38RzUPXpoac&ab_channel=CIPFPMislata \n\n"
+
+# ----------------------  ASIR  --------------------------#
+  utter_inform_grado_superior_asir: # Grado superior
+  - text: "ASIR - ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS EN RED\n\n"
+
+  utter_inform_grado_superior_asir_modulos:
+  - text: " Modulos para ASIR:
+           - Implantación de sistemas operativos.\n
+           - Planificación y administración de redes.\n
+           - Fundamentos de hardware.\n
+           - Gestión de bases de datos.\n
+           - Lenguajes de marcas y sistemas de gestión de información.\n
+           - Administración de sistemas operativos.\n
+           - Servicios de red e Internet.\n\n
+           - Implantación de aplicaciones web.\n
+           - Administración de sistemas gestores de bases de datos.\n
+           - Seguridad y alta disponibilidad.\n
+           - Proyecto de administración de sistemas informáticos en red.\n
+           - Formación y orientación laboral.\n
+           - Empresa e iniciativa emprendedora.\n
+           - Formación en centros de trabajo.\n\n"
+
+  utter_inform_grado_superior_asir_video:
+  - text: "Puede ver este video para un poco mas de informacion :)\n
+           https://www.youtube.com/watch?v=KD8U1WDan5w&ab_channel=CIPFPMislata \n\n"
+
+# ----------------------  IABD  --------------------------#
+  utter_inform_grado_master_iabd: # Master
+  - text: "BIG DATA - Curso de especialización en Inteligencia Artificial y BIG DATA\n\n"
+
+  utter_inform_grado_master_iabd_modulos:
+  - text: " Modulos para BIG DATA:
+           - Modelos de Inteligencia Artificial.\n
+           - Sistemas de aprendizaje automático.\n
+           - Programación de Inteligencia Artificial.\n
+           - Sistemas de Big Data.\n
+           - Big Data aplicado.\n\n"
+
+  utter_inform_grado_master_iabd_video:
+  - text: "Puede ver este video para un poco mas de informacion :)\n
+           https://www.youtube.com/watch?v=nTjP15w18DM&ab_channel=CIPFPMislata \n\n"
+
+# ----------------------  CIBER  --------------------------#
+  utter_inform_grado_master_ciber: # Master
+  - text: "CIBERSEGURIDAD - Curso de especialización en Ciberseguridad\n\n"
+
+  utter_inform_grado_master_ciber_modulos:
+  - text: " Modulos para CIBERSEGURIDAD:
+           - Incidentes de ciberseguridad.\n
+           - Bastionado de redes y sistemas.\n
+           - Puesta en producción segura.\n
+           - Análisis forense informático.\n
+           - Hacking ético.\n
+           - Normativa de ciberseguridad.\n\n"
+
+  utter_inform_grado_master_ciber_video:
+  - text: "Puede ver este video para un poco mas de informacion :)\n
+           https://www.youtube.com/watch?v=Xr1TxZNNQ2A&ab_channel=CIPFPMislata \n\n"
 
 # --------------------------------------------------------#
 # ---------------------   RANDOM     ---------------------#
