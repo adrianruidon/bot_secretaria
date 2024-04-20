@@ -69,6 +69,11 @@ responses:
   utter_convalidaciones: # convalidaciones
   - text: "\nPuedes convalidar tus asignaturas durante todo el mes de septiembre -> (https://www.fpmislata.com/wordpress/secretaria/tramites/tramites-convalidaciones/)\n"
 
+
+# --------------------------------------------------------#
+# -------------  RENUNCIA CONVOCATORIAS  -----------------#
+# --------------------------------------------------------#
+
   utter_renuncia_convo:
   - text: "\nLas solicitudes deben presentarse al menos dos meses antes del final 
             del período lectivo. La resolución se comunica en un mes y 
@@ -99,6 +104,11 @@ responses:
   - text: "\n\n\n Si deseas conocer mas informacion sobre este tramite, no dudes en visitar la pagina web con las instrucciones y solicitudes:\n 
            https://www.fpmislata.com/wordpress/secretaria/tramites/renuncia-convocatorias/\n"
 
+
+# --------------------------------------------------------#
+# ----------------------   BECAS  ------------------------#
+# --------------------------------------------------------#
+
   utter_becas: # Becas
   - text: "Plazo de presentación de solicitudes para becas no universitarias:\n
            ABIERTO desde el 19 de marzo de 2024 a las 09:00 - hasta el 10 de mayo de 2024 a las 15:00\n"
@@ -124,6 +134,37 @@ responses:
           Certificado de minusvalía \n
           Justificación de hermanos residen fuera domicilio \n
           Acreditación de la orfandad absoluta\n"
+
+
+# --------------------------------------------------------#
+# --------   MATRICULA / REQUISITOS DE ACCESO  -----------#
+# --------------------------------------------------------#
+
+  utter_matric_aviso:
+  - text: "Antes de iniciar los trámites de la matrícula debes comprobar que 
+           apareces en las listas DEFINITIVAS de admitidos"
+  
+  utter_matric_plazos_matriculacion:
+  - text: "8 y el 17 de mayo de 2023 -> Presentar documentación"
+
+  utter_matric_preguntar_si_matriculado:
+  - text: "Estas ya matriculado en el centro?"
+
+  utter_matric_pregunar_grado:
+  - text: "Para que grado te gustaria matricularte; Grado medio o Grado Superior?"
+
+  utter_matric_pregunta_conocer_instrucciones:
+  - text: "Inf extra:\n
+            - Introduce los documentos completados en una funda transparente y deposítalos en el lugar designado en el aula multiusos según el calendario.\n
+            - En la primera tutoría del curso, tu tutor te devolverá los originales, incluyendo el requisito académico y, si es necesario, el certificado de calificaciones de 1º o módulos aprobados.\n
+            - Tendrás que rellenar en clase:\n
+            - - Documento Web Familia (solo para menores de edad)\n
+            - - Comunicado al Alumnado\n
+            - - Modelo de solicitud de consentimiento para la recogida de datos (firmado)\n"
+
+# --------------------------------------------------------#
+# ---------------------   RANDOM     ---------------------#
+# --------------------------------------------------------#
 
   utter_duda:
   - text: "Algo mas con lo que puedo aydarte?\n"

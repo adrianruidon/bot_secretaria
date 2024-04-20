@@ -99,6 +99,11 @@ nlu:
     - Esta abierta la secretaria los fines de semana
     - Cual es el horario de atencion al cliente en la secretaria
 
+
+# --------------------------------------------------------#
+# -------------  RENUNCIA CONVOCATORIAS  -----------------#
+# --------------------------------------------------------#
+
 - intent: u_conva_asignaturas
   examples: |
     - Como puedo convalidar asignaturas
@@ -156,6 +161,11 @@ nlu:
     - como eliminar mi registro de la convocatoria extraordinaria
     - que pasos debo seguir para renunciar a la convocatoria extraordinaria
 
+
+# --------------------------------------------------------#
+# ----------------------   BECAS  ------------------------#
+# --------------------------------------------------------#
+
 - intent: u_becas
   examples: |
     - que becas hay disponibles actualmente
@@ -194,6 +204,11 @@ nlu:
     - hay algun requisito de residencia para solicitar becas
     - se requiere algun tipo de recomendacion para aplicar a una beca
     - que edad maxima se considera para ser elegible para becas
+
+
+# --------------------------------------------------------#
+# --------   MATRICULA / REQUISITOS DE ACCESO  -----------#
+# --------------------------------------------------------#
 
 - intent: u_matricula
   examples: |
