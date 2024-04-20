@@ -151,7 +151,7 @@ responses:
   - text: "Estas ya matriculado en el centro?"
 
   utter_matric_pregunar_grado:
-  - text: "Para que grado te gustaria matricularte; Grado medio o Grado Superior?"
+  - text: "Para que grado te gustaria matricularte; Grado Medio o Grado Superior?"
 
   utter_matric_nuevos_gradomedio_y_gradosuperior: # Para alumnos nuevos
   - text: "- Impreso de Matrícula rellenado.\n
