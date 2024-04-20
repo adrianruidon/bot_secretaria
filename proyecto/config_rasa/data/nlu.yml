@@ -261,20 +261,16 @@ nlu:
 
 - intent: u_grado
   examples: |
-    - cuales son los grados de informatica disponibles en FP
-    - que grados de informatica puedo estudiar en formacion profesional
-    - donde puedo obtener informacion sobre los grados de informatica en FP
-    - cuales son los requisitos para acceder a los grados de informatica en FP
+    - que grados hay disponibles
+    - que grados de informatica puedo estudiar
+    - que fp hay disponible
     - como puedo matricularme en un grado de informatica en FP
     - hay algun plazo para solicitar los grados de informatica en FP
-    - que salidas laborales tienen los grados de informatica en FP
-    - cual es la duracion de los grados de informatica en FP
     - que asignaturas se cursan en los grados de informatica en FP
     - como puedo obtener mas detalles sobre los grados de informatica en FP
 
 - intent: u_grado_medio
   examples: |
-    - cuales son los grados medios de informatica disponibles
     - que grados medios de informatica puedo estudiar
     - donde puedo obtener informacion sobre los grados medios de informatica
     - cuales son los requisitos para acceder a los grados medios de informatica
@@ -288,10 +284,8 @@ nlu:
 - intent: u_grado_superior
   examples: |
     - cuales son los grados superiores de informatica disponibles
-    - que grados superiores de informatica puedo estudiar
-    - donde puedo obtener informacion sobre los grados superiores de informatica
     - cuales son los requisitos para acceder a los grados superiores de informatica
-    - como puedo matricularme en un grado superior de informatica
+    - como me matriculo en un grado superior de informatica
     - hay algun plazo para solicitar los grados superiores de informatica
     - que salidas laborales tienen los grados superiores de informatica
     - cual es la duracion de los grados superiores de informatica
@@ -300,8 +294,6 @@ nlu:
 
 - intent: u_grado_superior_daw
   examples: |
-    - cual es la informacion sobre el grado superior de DAW
-    - donde puedo encontrar informacion sobre el grado superior de DAW
     - que puedo saber sobre el grado superior de DAW
     - como puedo obtener detalles sobre el grado superior de DAW
     - hay alguna pagina web donde pueda ver mas sobre el grado superior de DAW
@@ -314,9 +306,6 @@ nlu:
 - intent: u_grado_superior_dam
   examples: |
     - cual es la informacion sobre el grado superior de DAM
-    - donde puedo encontrar informacion sobre el grado superior de DAM
-    - que puedo saber sobre el grado superior de DAM
-    - como puedo obtener detalles sobre el grado superior de DAM
     - hay alguna pagina web donde pueda ver mas sobre el grado superior de DAM
     - cual es la duracion y los contenidos del grado superior de DAM
     - que salidas laborales tiene el grado superior de DAM
@@ -326,10 +315,9 @@ nlu:
 
 - intent: u_asir_info
   examples: |
-    - cual es la informacion sobre el grado superior de ASIR
-    - donde puedo encontrar informacion sobre el grado superior de ASIR
-    - que puedo saber sobre el grado superior de ASIR
-    - como puedo obtener detalles sobre el grado superior de ASIR
+    - que asignaturas se dan en asir
+    - que se da en asir
+    - pasame la informacion de asir
     - hay alguna pagina web donde pueda ver mas sobre el grado superior de ASIR
     - cual es la duracion y los contenidos del grado superior de ASIR
     - que salidas laborales tiene el grado superior de ASIR
@@ -339,26 +327,37 @@ nlu:
 
 - intent: u_curso_espe
   examples: |
-    - cuáles son los cursos de especialización disponibles
-    - qué cursos de especialización puedo estudiar
-    - dónde puedo obtener información sobre los cursos de especialización
-    - cuáles son los requisitos para acceder a los cursos de especialización
-    - cómo puedo matricularme en un curso de especialización
-    - hay algún plazo para solicitar los cursos de especialización
-    - qué salidas laborales tienen los cursos de especialización
-    - cuál es la duración de los cursos de especialización
-    - qué temáticas se tratan en los cursos de especialización
-    - cómo puedo obtener más detalles sobre los cursos de especialización
+    - cuales son los cursos de especializacion disponibles
+    - que cursos de especializacion puedo estudiar
+    - donde puedo obtener informacion sobre los cursos de especializacion
+    - cuales son los requisitos para acceder a los cursos de especializacion
+    - como puedo matricularme en un curso de especializacion
+    - hay algun plazo para solicitar los cursos de especializacion
+    - que salidas laborales tienen los cursos de especializacion
+    - cual es la duracion de los cursos de especializacion
+    - que tematicas se tratan en los cursos de especializacion
+    - cemo puedo obtener más detalles sobre los cursos de especializacion
 
 - intent: u_curso_espe_iabd
   examples: |
-    - cuáles son los cursos de especialización en IABD disponibles
-    - qué cursos de especialización en IABD puedo estudiar
-    - dónde puedo obtener información sobre los cursos de especialización en IABD
-    - cuáles son los requisitos para acceder a los cursos de especialización en IABD
-    - cómo puedo matricularme en un curso de especialización en IABD
-    - hay algún plazo para solicitar los cursos de especialización en IABD
-    - qué salidas laborales tienen los cursos de especialización en IABD
-    - cuál es la duración de los cursos de especialización en IABD
-    - qué temáticas se tratan en los cursos de especialización en IABD
-    - cómo puedo obtener más detalles sobre los cursos de especialización en IABD
+    - que asignaturas hay de ia y big data
+    - pasame la informacion del curso de ia y big data
+    - cual es el plazo para matricularse en el curso de ia y big data
+    - cuales son los requisitos para acceder a los cursos de especializacion en IABD
+    - como puedo matricularme en un curso de especializacion en IABD
+    - hay algun plazo para solicitar los cursos de especializacion en IABD
+    - que salidas laborales tienen los cursos de especializacion en IABD
+    - cual es la duración de los cursos de especializacion en IABD
+    - que tematicas se tratan en los cursos de especializacion en IABD
+
+- intent: u_curso_espe_iabd
+  examples: |
+    - que asignaturas hay de ciberseguridad
+    - pasame la informacion del curso de ciberseguridad
+    - cual es el plazo para matricularse en el curso de ciberseguridad
+    - cuales son los requisitos para acceder a al curso de ciberseguridad
+    - como puedo matricularme en un curso de especializacion en ciberseguridad
+    - hay algun plazo para la solicitud el curso de especializacion en ciberseguridad
+    - que salidas laborales tiene los curso de especializacion en ciberseguridad
+    - cual es la duracion del curso de especializacion en ciberseguridad
+    - qué tematicas se tratan en el curso de especializacion en ciberseguridad
