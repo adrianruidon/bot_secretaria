@@ -153,6 +153,17 @@ responses:
   utter_matric_pregunar_grado:
   - text: "Para que grado te gustaria matricularte; Grado medio o Grado Superior?"
 
+  utter_matric_nuevos_gradomedio_y_gradosuperior: # Para alumnos nuevos
+  - text: "- Impreso de Matrícula rellenado.\n
+           - Certificado Académico Oficial con nota media del requisito académico (original y fotocopia).\n
+           - Documento acreditativo de la identidad (fotocopia del DNI/NIE/PASAPORTE).\n
+           - Justificante de pago de 5 € a la cuenta proporcionada de CAJAMAR, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
+              - ES76 3058 2015 8927 2030 2910\n
+              - - TITULAR: CIPFP MISLATA\n
+              - - IMPORTE: 5 €\n
+              - - CONCEPTO: NOMBRE Y APELLIDOS ALUMNO/A SEGUIDO DE '23/24'\n
+           - Fotocopia de la tarjeta SIP\n"
+
   utter_matric_pregunta_conocer_instrucciones:
   - text: "Inf extra:\n
             - Introduce los documentos completados en una funda transparente y deposítalos en el lugar designado en el aula multiusos según el calendario.\n
