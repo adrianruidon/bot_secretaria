@@ -146,3 +146,109 @@ stories:
 # --------   MATRICULA / REQUISITOS DE ACCESO  -----------#
 # --------------------------------------------------------#
 
+- story: preguntar SOLO plazos matricula
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula_fecha
+  - action: utter_matric_aviso
+  - action: utter_matric_plazos_matriculacion
+  - action: utter_matric_pregunta_conocer_documentos_necesarios
+  - intent: u_nega
+  - action: utter_adios
+
+
+# -------------------   Nuevos   -------------------------#
+
+# Matricula: Conocer plazos de matriculacion y requisitos
+# siendo alumno nuevo en el centro con instrucciones
+- story: plazos matricula / nuevos / GM & GS / sin instrucciones
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula_fecha
+  - action: utter_matric_aviso
+  - action: utter_matric_plazos_matriculacion
+  - action: utter_matric_pregunta_conocer_documentos_necesarios
+  - intent: u_afirma
+  - action: utter_matric_preguntar_si_matriculado
+  - intent: u_nega
+  - action: utter_matric_nuevos_gradomedio_y_gradosuperior
+  - action: utter_matric_conocer_instruciones_alumn_nuevos
+  - intent: u_afirma
+  - action: utter_matric_conocer_instrucciones
+  - action: utter_adios
+
+# Matricula: Conocer plazos de matriculacion y requisitos
+# siendo alumno nuevo en el centro sin instrucciones
+- story: plazos matricula / nuevos / GM & GS / con instrucciones
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula_fecha
+  - action: utter_matric_aviso
+  - action: utter_matric_plazos_matriculacion
+  - action: utter_matric_pregunta_conocer_documentos_necesarios
+  - intent: u_afirma
+  - action: utter_matric_preguntar_si_matriculado
+  - intent: u_nega
+  - action: utter_matric_nuevos_gradomedio_y_gradosuperior
+  - action: utter_matric_conocer_instruciones_alumn_nuevos
+  - intent: u_nega
+  - action: utter_adios
+
+# Matricula: matriculacion y requisitos siendo alumno nuevo
+# centro con instrucciones con fecha
+- story: matricula / nuevos / GM & GS / con instrucciones
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula
+  - action: utter_matric_aviso
+  - action: utter_matric_preguntar_si_matriculado
+  - intent: u_nega
+  - action: utter_matric_nuevos_gradomedio_y_gradosuperior
+  - action: utter_matric_plazos_matriculacion
+  - aciton: utter_matric_conocer_instruciones_alumn_nuevos
+  - intent: u_afirma
+  - action: utter_matric_conocer_instrucciones
+  - action: utter_adios
+
+# Matricula: matriculacion y requisitos siendo alumno nuevo
+# centro sin instrucciones con echa
+- story: matricula / nuevos / GM & GS / sin instrucciones
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula
+  - action: utter_matric_aviso
+  - action: utter_matric_preguntar_si_matriculado
+  - intent: u_nega
+  - action: utter_matric_nuevos_gradomedio_y_gradosuperior
+  - action: utter_matric_plazos_matriculacion
+  - aciton: utter_matric_conocer_instruciones_alumn_nuevos
+  - intent: u_nega
+  - action: utter_adios
+
+
+# -----------------   Ya Matriculados   -----------------------#
+
+# Matricula: Conocer plazos de matriculacion y requisitos
+# siendo alumno matriculado en el centro con instrucciones
+- story: plazos matricula / matriculados / GM & GS / sin instrucciones
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula_fecha
+  - action: utter_matric_aviso
+  - action: utter_matric_plazos_matriculacion
+  - action: utter_matric_pregunta_conocer_documentos_necesarios
+  - intent: u_afirma
+  - action: utter_matric_preguntar_si_matriculado
+  - intent: u_afirma
+
+  - action: utter_matric_nuevos_gradomedio_y_gradosuperior
+  - action: utter_matric_conocer_instruciones_alumn_nuevos
+  - intent: u_afirma
+  - action: utter_matric_conocer_instrucciones
+  - action: utter_adios
