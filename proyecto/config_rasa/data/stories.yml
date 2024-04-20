@@ -209,7 +209,7 @@ stories:
   - intent: u_nega
   - action: utter_matric_nuevos_gradomedio_y_gradosuperior
   - action: utter_matric_plazos_matriculacion
-  - aciton: utter_matric_conocer_instruciones_alumn_nuevos
+  - action: utter_matric_conocer_instruciones_alumn_nuevos
   - intent: u_afirma
   - action: utter_matric_conocer_instrucciones
   - action: utter_adios
@@ -226,7 +226,7 @@ stories:
   - intent: u_nega
   - action: utter_matric_nuevos_gradomedio_y_gradosuperior
   - action: utter_matric_plazos_matriculacion
-  - aciton: utter_matric_conocer_instruciones_alumn_nuevos
+  - action: utter_matric_conocer_instruciones_alumn_nuevos
   - intent: u_nega
   - action: utter_adios
 
@@ -234,8 +234,8 @@ stories:
 # -----------------   Ya Matriculados   -----------------------#
 
 # Matricula: Conocer plazos de matriculacion y requisitos
-# siendo alumno matriculado en el centro con instrucciones
-- story: plazos matricula / matriculados / GM & GS / sin instrucciones
+# siendo alumno matriculado GM
+- story: plazos matricula / matriculados / GM
   steps:
   - intent: u_saludo
   - action: utter_saludo
@@ -246,9 +246,55 @@ stories:
   - intent: u_afirma
   - action: utter_matric_preguntar_si_matriculado
   - intent: u_afirma
-#
-  - action: utter_matric_nuevos_gradomedio_y_gradosuperior
-  - action: utter_matric_conocer_instruciones_alumn_nuevos
+  - action: utter_matric_pregunar_grado
+  - intent: u_grado_medio
+  - action: utter_matric_ya_matriculados_gm
+  - action: utter_adios
+
+# Matricula: Conocer plazos de matriculacion y requisitos
+# siendo alumno matriculado GS
+- story: plazos matricula / matriculados / GS
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula_fecha
+  - action: utter_matric_aviso
+  - action: utter_matric_plazos_matriculacion
+  - action: utter_matric_pregunta_conocer_documentos_necesarios
   - intent: u_afirma
-  - action: utter_matric_conocer_instrucciones
+  - action: utter_matric_preguntar_si_matriculado
+  - intent: u_afirma
+  - action: utter_matric_pregunar_grado
+  - intent: u_grado_superior
+  - action: utter_matric_ya_matriculados_gs
+  - action: utter_adios
+
+# Matricula: Conocer requisitos siendo GM
+- story: matriculados / GM
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula
+  - action: utter_matric_aviso
+  - action: utter_matric_plazos_matriculacion
+  - action: utter_matric_preguntar_si_matriculado
+  - intent: u_afirma
+  - action: utter_matric_pregunar_grado
+  - intent: u_grado_medio
+  - action: utter_matric_ya_matriculados_gm
+  - action: utter_adios
+
+# Matricula: Conocer requisitos siendo GS
+- story: matriculados / GS
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_matricula
+  - action: utter_matric_aviso
+  - action: utter_matric_plazos_matriculacion
+  - action: utter_matric_preguntar_si_matriculado
+  - intent: u_afirma
+  - action: utter_matric_pregunar_grado
+  - intent: u_grado_superior
+  - action: utter_matric_ya_matriculados_gs
   - action: utter_adios
