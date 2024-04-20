@@ -261,9 +261,9 @@ nlu:
 
 - intent: u_grado
   examples: |
-    - que grados hay disponibles
+    - que grados hay disponibles de informatica
     - que grados de informatica puedo estudiar
-    - que fp hay disponible
+    - que fp hay disponible de informatica
     - como puedo matricularme en un grado de informatica en FP
     - hay algun plazo para solicitar los grados de informatica en FP
     - que asignaturas se cursan en los grados de informatica en FP
@@ -271,6 +271,9 @@ nlu:
 
 - intent: u_grado_medio
   examples: |
+    - grado medio
+    - medio
+    - GM
     - que grados medios de informatica puedo estudiar
     - donde puedo obtener informacion sobre los grados medios de informatica
     - cuales son los requisitos para acceder a los grados medios de informatica
@@ -283,6 +286,9 @@ nlu:
 
 - intent: u_grado_superior
   examples: |
+    - grado superior
+    - GS
+    - superior
     - cuales son los grados superiores de informatica disponibles
     - cuales son los requisitos para acceder a los grados superiores de informatica
     - como me matriculo en un grado superior de informatica
@@ -327,6 +333,7 @@ nlu:
 
 - intent: u_curso_espe
   examples: |
+    - Master
     - cuales son los cursos de especializacion disponibles
     - que cursos de especializacion puedo estudiar
     - donde puedo obtener informacion sobre los cursos de especializacion
@@ -340,6 +347,8 @@ nlu:
 
 - intent: u_curso_espe_iabd
   examples: |
+    - inteligencia artificial
+    - big data
     - que asignaturas hay de ia y big data
     - pasame la informacion del curso de ia y big data
     - cual es el plazo para matricularse en el curso de ia y big data
@@ -350,7 +359,7 @@ nlu:
     - cual es la duración de los cursos de especializacion en IABD
     - que tematicas se tratan en los cursos de especializacion en IABD
 
-- intent: u_curso_espe_iabd
+- intent: u_curso_espe_ciberseguridad
   examples: |
     - que asignaturas hay de ciberseguridad
     - pasame la informacion del curso de ciberseguridad

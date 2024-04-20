@@ -298,3 +298,28 @@ stories:
   - intent: u_grado_superior
   - action: utter_matric_ya_matriculados_gs
   - action: utter_adios
+
+
+# --------------------------------------------------------#
+# ---------------  Oferta Informatica  -------------------#
+# --------------------------------------------------------#
+# 
+#
+- story: grado medio (solo uno)
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_grado_medio
+  - action: utter_inform_texto_cursos
+  - action: 
+
+
+- story: grado superior
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado
+  - action: utter_inform_pregunta_que_estudiar
+  - intent: u_grado_medio

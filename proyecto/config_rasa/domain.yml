@@ -203,6 +203,23 @@ responses:
            - - En caso de solicitud de cambio de turno, adjunta la justificación de los motivos.\n
            - - En el asunto del correo electrónico, indica las siglas del ciclo formativo seguido del nombre y apellidos del alumno.\n"
 
+
+# --------------------------------------------------------#
+# -------------------   INFORMATICA  ---------------------#
+# --------------------------------------------------------#
+
+  utter_inform_texto_cursos:
+  - text: "Para el nivel que has elegido existen los siguientes cursos:\n"
+
+  utter_inform_pregunta_que_estudiar:
+  - text: "Que grado te gustaria estudiar Medio o Superior? O un Master?\n"
+
+  utter_inform_responder_con_link:
+  - text: "https://www.fpmislata.com/wordpress/formacion/ciclos-formativos-informatica-smr-daw-dam-asir/\n"
+
+  utter_inform_grado_medio_smr:
+  - text: "SMR - SISTEMAS MICROINFORMÁTICOS Y REDES\n"
+
 # --------------------------------------------------------#
 # ---------------------   RANDOM     ---------------------#
 # --------------------------------------------------------#
