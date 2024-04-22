@@ -14,9 +14,9 @@ class ActionShowDegrees(Action):
         df = pd.read_csv('csvs/grados.csv', sep=';')
 
         # Construir el mensaje a enviar
-        message = "Lista de Grados y Turnos:\n"
+        message = "**Lista de Grados y Turnos:**\n\n"
         for index, row in df.iterrows():
-            message += f"- {row['GRADO']} está disponible en {row['TURNO']}.\n"
+            message += f"- {row['GRADO']} está disponible en {row['TURNO']}.\n\n"
 
         # Enviar mensaje
         dispatcher.utter_message(text=message)

@@ -7,20 +7,38 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputField = document.getElementById('input');
     const sendButton = document.getElementById('sendBtn');
 
+    // Configuración de Marked.js para habilitar enlaces y otras opciones
+    const renderer = new marked.Renderer();
+    renderer.link = function(href, title, text) {
+        // Abrir enlaces en una nueva pestaña
+        return `<a target="_blank" href="${href}" title="${title || ''}">${text}</a>`;
+    };
+
+    marked.setOptions({
+        renderer: renderer,
+        gfm: true,
+        breaks: true,
+        sanitize: false
+    });
+
+    // Evento para minimizar el chat
     minimizeButton.addEventListener('click', function() {
         chatContainer.style.display = 'none';
         minimizedIcon.style.display = 'flex';
     });
 
+    // Evento para restaurar el chat
     minimizedIcon.addEventListener('click', function() {
         chatContainer.style.display = 'flex';
         minimizedIcon.style.display = 'none';
     });
 
+    // Evento para enviar mensajes
     sendButton.addEventListener('click', function() {
         sendMessage();
     });
 
+    // Permite enviar mensajes con la tecla Enter
     inputField.addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
             event.preventDefault();
@@ -28,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Función para enviar mensajes
     function sendMessage() {
         const message = inputField.value.trim();
         if (message) {
@@ -54,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function appendMessage(sender, text, className) {
         const messageDiv = document.createElement('div');
         messageDiv.className = `chat-message ${className}`;
-        messageDiv.textContent = text;
+        messageDiv.innerHTML = marked.parse(text);
         chatBox.appendChild(messageDiv);
         chatBox.scrollTop = chatBox.scrollHeight;
     }

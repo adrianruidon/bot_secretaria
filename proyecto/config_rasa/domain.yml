@@ -247,7 +247,7 @@ responses:
 
 # ----------------------   SMR  --------------------------#
   utter_inform_grado_medio_smr_modulos:
-  - text: " **Modulos para SMR**:
+  - text: " **Modulos para SMR**:\n\n
            - Montaje y mantenimiento de equipo.\n
            - Aplicaciones ofimáticas.\n
            - Sistemas operativos monopuesto.\n
@@ -268,7 +268,7 @@ responses:
   - text: "**DAM** - DESARROLLO DE APLICACIONES MULTIPLATAFORMA (SEMIPRESENCIAL)\n\n"
 
   utter_inform_grado_superior_dam_modulos:
-  - text: " **Modulos para DAM**:
+  - text: " **Modulos para DAM**:\n\n
            - Sistemas informáticos.\n
            - Bases de Datos.\n
            - Programación.\n
@@ -292,7 +292,7 @@ responses:
   - text: "**DAW** - DESARROLLO DE APLICACIONES WEB\n\n"
 
   utter_inform_grado_superior_daw_modulos:
-  - text: " **Modulos para DAW**:
+  - text: " **Modulos para DAW**:\n\n
            - Sistemas informáticos.\n
            - Bases de datos.\n
            - Programación.\n
@@ -315,7 +315,7 @@ responses:
   - text: "**ASIR** - ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS EN RED\n\n"
 
   utter_inform_grado_superior_asir_modulos:
-  - text: " **Modulos para ASIR**:
+  - text: " **Modulos para ASIR**:\n\n
            - Implantación de sistemas operativos.\n
            - Planificación y administración de redes.\n
            - Fundamentos de hardware.\n
@@ -339,7 +339,7 @@ responses:
   - text: "**BIG DATA** - Curso de especialización en Inteligencia Artificial y BIG DATA\n\n"
 
   utter_inform_grado_master_iabd_modulos:
-  - text: " **Modulos para BIG DATA**:
+  - text: " **Modulos para BIG DATA**:\n\n
            - Modelos de Inteligencia Artificial.\n
            - Sistemas de aprendizaje automático.\n
            - Programación de Inteligencia Artificial.\n
@@ -354,7 +354,7 @@ responses:
   - text: "**CIBERSEGURIDAD** - Curso de especialización en Ciberseguridad\n\n"
 
   utter_inform_grado_master_ciber_modulos:
-  - text: " **Modulos para CIBERSEGURIDAD**:
+  - text: " **Modulos para CIBERSEGURIDAD**:\n\n
            - Incidentes de ciberseguridad.\n
            - Bastionado de redes y sistemas.\n
            - Puesta en producción segura.\n
