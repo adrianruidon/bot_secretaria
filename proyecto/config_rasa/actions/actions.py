@@ -10,14 +10,15 @@ class ActionShowDegrees(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
         # Leer el archivo CSV usando ';' como separador
         df = pd.read_csv('csvs/grados.csv', sep=';')
 
-        # Crear y enviar detalles de cada grado
+        # Construir el mensaje a enviar
+        message = "Lista de Grados y Turnos:\n"
         for index, row in df.iterrows():
-            dispatcher.utter_message(response="utter_inform_turnos_disponibles",
-                                     grad=row['GRADO'],
-                                     turn=row['TURNO'])
+            message += f"- {row['GRADO']} está disponible en {row['TURNO']}.\n"
+
+        # Enviar mensaje
+        dispatcher.utter_message(text=message)
 
         return []

@@ -303,6 +303,7 @@ nlu:
 - intent: u_grado
   examples: |
     - grado
+    - que modulos hay
     - Se puede estudiar programacion en vuestro instituto
     - que puedo estudiar de informatica en este instituto
     - informatica en este instituto
