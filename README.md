@@ -1,1 +1,1 @@
-# bot_secretaria
+# Bot de asistencia para la secretaría de CIPFP Mislata
