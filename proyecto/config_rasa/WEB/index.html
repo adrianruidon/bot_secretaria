@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot con RASA</title>
+    <link rel="icon" type="image/png" href="img/mislata.png" sizes="32x32">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            Chatbot RASA
+            <button id="minimizeBtn" class="minimize-button">-</button>
+        </div>
+        <div id="chatbox" class="chatbox"></div>
+        <div class="input-area">
+            <input type="text" id="input" class="input-box" placeholder="Escribe un mensaje..." autofocus>
+            <button id="sendBtn" class="send-button">Enviar</button>
+        </div>
+    </div>
+    <div id="minimized-icon" class="minimized-icon hidden">
+        <img src="img/robot-icon.png" alt="Chatbot">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

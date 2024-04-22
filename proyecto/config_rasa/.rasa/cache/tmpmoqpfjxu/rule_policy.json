@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_festivos\"}}]": "utter_festivos_vacaciones",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_festivos\"}}, {\"prev_action\": {\"action_name\": \"utter_festivos_vacaciones\"}, \"user\": {\"intent\": \"u_festivos\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_despedida\"}}]": "utter_adios",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_adios\"}, \"user\": {\"intent\": \"u_despedida\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_horario_secretaria\"}}]": "utter_horario_secretaria",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_horario_secretaria\"}}, {\"prev_action\": {\"action_name\": \"utter_horario_secretaria\"}, \"user\": {\"intent\": \"u_horario_secretaria\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_horarios\"}}]": "utter_horario_clases",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_horarios\"}}, {\"prev_action\": {\"action_name\": \"utter_horario_clases\"}, \"user\": {\"intent\": \"u_horarios\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_conva_asignaturas\"}}]": "utter_convalidaciones",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_conva_asignaturas\"}}, {\"prev_action\": {\"action_name\": \"utter_convalidaciones\"}, \"user\": {\"intent\": \"u_conva_asignaturas\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "utter_repetir_entrada",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_repetir_entrada\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_tiempo_cert\"}}]": "utter_tiempo_espera_certificados",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_tiempo_cert\"}}, {\"prev_action\": {\"action_name\": \"utter_tiempo_espera_certificados\"}, \"user\": {\"intent\": \"u_tiempo_cert\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_repetir_entrada\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_horario_secretaria\"}}, {\"prev_action\": {\"action_name\": \"utter_horario_secretaria\"}, \"user\": {\"intent\": \"u_horario_secretaria\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_festivos\"}}, {\"prev_action\": {\"action_name\": \"utter_festivos_vacaciones\"}, \"user\": {\"intent\": \"u_festivos\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_despedida\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_tiempo_cert\"}}, {\"prev_action\": {\"action_name\": \"utter_tiempo_espera_certificados\"}, \"user\": {\"intent\": \"u_tiempo_cert\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_conva_asignaturas\"}}, {\"prev_action\": {\"action_name\": \"utter_convalidaciones\"}, \"user\": {\"intent\": \"u_conva_asignaturas\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_tiempo_cert\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_horario_secretaria\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_conva_asignaturas\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_festivos\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_horarios\"}}, {\"prev_action\": {\"action_name\": \"utter_horario_clases\"}, \"user\": {\"intent\": \"u_horarios\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_horarios\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"u_despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_adios\"}, \"user\": {\"intent\": \"u_despedida\"}}]"
+    ]
+  }
+}

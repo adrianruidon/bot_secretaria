@@ -25,6 +25,7 @@ intents:
   - u_matricula_docu_segundo_medio
   - u_matricula_docu_segundo_superior
   - u_grado
+  - u_grado_turnos
   - u_grado_medio
   - u_grado_superior
   - u_grado_superior_daw
@@ -49,14 +50,14 @@ responses:
            Se comunicará por carta al interesado/a, para su recogida.\n"
 
   utter_horario_clases: # horarios clase
-  - text: "Grupo mañana: de lunes a viernes de 8:00 a 14:00h \n
-           Grupo tarde: de lunes a viernes de 15:00 a 21:00h\n"
+  - text: "Grupo **mañana**: de lunes a viernes de 8:00 a 14:00h \n
+           Grupo **tarde**: de lunes a viernes de 15:00 a 21:00h\n"
 
   utter_festivos_vacaciones: # festivos
-  - text: "- Navidad: del 23 de diciembre al 7 de enero \n
-           - Fallas: del 16 al 19 de marzo \n
-           - Semana Santa: del 28 de marzo al 8 de abril \n
-           - Festivos y puentes: \n
+  - text: "- **Navidad**: del 23 de diciembre al 7 de enero \n
+           - **Fallas**: del 16 al 19 de marzo \n
+           - **Semana Santa**: del 28 de marzo al 8 de abril \n
+           - **Festivos y puentes**: \n
            - - -  9 octubre (Fiesta)\n
            - - -  12 al 15 de octubre (Puente)\n
            - - -  1 de noviembre (Fiesta)\n
@@ -67,7 +68,7 @@ responses:
   - text: "\nDe lunes a viernes de 10 a 13 horas, y martes y jueves de 16 a 18 horas.\n"
 
   utter_convalidaciones: # convalidaciones
-  - text: "\nPuedes convalidar tus asignaturas durante todo el mes de septiembre -> (https://www.fpmislata.com/wordpress/secretaria/tramites/tramites-convalidaciones/)\n"
+  - text: "\nPuedes convalidar tus asignaturas durante todo el mes de septiembre **[Información](https://www.fpmislata.com/wordpress/secretaria/tramites/tramites-convalidaciones/)**\n"
 
 
 
@@ -83,7 +84,7 @@ responses:
             la anulación de la matrícula.\n"
 
   utter_pregunta_renuncia_conv:
-  - text: "\nCual de las convocatorias te gustaria renunciar?\n\n
+  - text: "\n**Cual de las convocatorias te gustaria renunciar?**\n\n
             - Convocatoria ordinaria\n
             - Convocatoria TFG\n
             - Convocatoria extraordinaria"
@@ -103,7 +104,7 @@ responses:
 
   utter_renuncia_convo_link: # Link para acceder a todos los tramites relacionados con la renuncia
   - text: "\n\n\n Si deseas conocer mas informacion sobre este tramite, no dudes en visitar la pagina web con las instrucciones y solicitudes:\n 
-           https://www.fpmislata.com/wordpress/secretaria/tramites/renuncia-convocatorias/\n"
+           **[Información](https://www.fpmislata.com/wordpress/secretaria/tramites/renuncia-convocatorias/)**\n"
 
 
 
@@ -112,7 +113,7 @@ responses:
 # --------------------------------------------------------#
 
   utter_becas: # Becas
-  - text: "Plazo de presentación de solicitudes para becas no universitarias:\n
+  - text: "Plazo de presentación de solicitudes para becas **no universitarias**:\n
            ABIERTO desde el 19 de marzo de 2024 a las 09:00 - hasta el 10 de mayo de 2024 a las 15:00\n"
 
   utter_conocer_requisitos_becas:
@@ -122,20 +123,20 @@ responses:
   - text: "Desea conocer las fechas de presentacion de la beca?\n"
 
   utter_becas_requisitos: # Requisitos para la beca
-  - text: "DATOS OBLIGATORIOS \n\n
-          NIF/NIE/PASAPORTE del solicitante \n
-          NIF/NIE/PASAPORTE de los miembros de la unidad familiar \n
-          Certificación de estudios, de matrícula, notas o calificaciones \n
-          DATOS NO OBLIGATORIOS \n\n
-          Acreditación de la independencia \n
-          Justificación de la situación familiar \n
-          Certificados de empadronamiento o convivencia \n
-          Acreditación de la monoparentalidad o custodia \n
-          Presentar contrato de alquiler \n
-          Título de familia numerosa \n
-          Certificado de minusvalía \n
-          Justificación de hermanos residen fuera domicilio \n
-          Acreditación de la orfandad absoluta\n"
+  - text: "**DATOS OBLIGATORIOS** \n\n
+          - NIF/NIE/PASAPORTE del solicitante \n
+          - NIF/NIE/PASAPORTE de los miembros de la unidad familiar \n
+          - Certificación de estudios, de matrícula, notas o calificaciones \n\n
+          **DATOS NO OBLIGATORIOS** \n\n
+          - Acreditación de la independencia \n
+          - Justificación de la situación familiar \n
+          - Certificados de empadronamiento o convivencia \n
+          - Acreditación de la monoparentalidad o custodia \n
+          - Presentar contrato de alquiler \n
+          - Título de familia numerosa \n
+          - Certificado de minusvalía \n
+          - Justificación de hermanos residen fuera domicilio \n
+          - Acreditación de la orfandad absoluta\n"
 
 
 
@@ -145,10 +146,10 @@ responses:
 
   utter_matric_aviso:
   - text: "Antes de iniciar los trámites de la matrícula debes comprobar que 
-           apareces en las listas DEFINITIVAS de admitidos\n\n"
+           apareces en las listas **DEFINITIVAS** de admitidos\n\n"
   
   utter_matric_plazos_matriculacion:
-  - text: "Los plazos de matriculacion son: 8 y el 17 de mayo de 2023 -> Presentar documentación\n"
+  - text: "Los plazos de matriculacion son: **8 y el 17 de mayo de 2024**-> Presentar documentación\n"
 
   utter_matric_conocer_instruciones_alumn_nuevos:
   - text: "Te gustaria conocer las instrucciones para realizar la matricula?\n"
@@ -157,26 +158,26 @@ responses:
   - text: "Estas ya matriculado en el centro?\n"
 
   utter_matric_pregunar_grado:
-  - text: "Para que grado te gustaria matricularte; Grado medio o Grado Superior?\n"
+  - text: "Para que grado te gustaria matricularte; **Grado medio** o **Grado Superior**?\n"
 
   utter_matric_pregunta_conocer_documentos_necesarios:
   - text: "Te gustaria conocer los documentos necesarios para matricularte?\n"
 
   utter_matric_nuevos_gradomedio_y_gradosuperior: # Para alumnos nuevos
-  - text: "- Impreso de Matrícula rellenado.\n\n
-           - Certificado Académico Oficial con nota media del requisito académico (original y fotocopia).\n\n
-           - Documento acreditativo de la identidad (fotocopia del DNI/NIE/PASAPORTE).\n\n
-           - Justificante de pago de 5 € a la cuenta proporcionada de CAJAMAR, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
+  - text: "- **Impreso de Matrícula rellenado**.\n\n
+           - **Certificado Académico Oficial** con nota media del requisito académico (original y fotocopia).\n\n
+           - **Documento acreditativo** de la identidad (fotocopia del **DNI/NIE/PASAPORTE**).\n\n
+           - **Justificante de pago** de 5 € a la cuenta proporcionada de CAJAMAR, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
            - - ES76 3058 2015 8927 2030 2910\n
            - - - TITULAR: CIPFP MISLATA\n
            - - - IMPORTE: 5 €\n
            - - - CONCEPTO: NOMBRE Y APELLIDOS ALUMNO/A SEGUIDO DE '23/24'\n\n
-           - Fotocopia de la tarjeta SIP\n"
+           - Fotocopia de la **tarjeta SIP**\n"
 
   utter_matric_conocer_instrucciones:
-  - text: "Inf extra:\n
-            - Introduce los documentos completados en una funda transparente y deposítalos en el lugar designado en el aula multiusos según el calendario.\n\n
-            - En la primera tutoría del curso, tu tutor te devolverá los originales, incluyendo el requisito académico y, si es necesario, el certificado de calificaciones de 1º o módulos aprobados.\n\n
+  - text: "**Inf extra:**\n
+            - Introduce los documentos completados en una funda transparente y deposítalos en el lugar designado en el aula multiusos según el calendario.\n
+            - En la primera tutoría del curso, tu tutor te devolverá los originales, incluyendo el requisito académico y, si es necesario, el certificado de calificaciones de 1º o módulos aprobados.\n
             - Tendrás que rellenar en clase:\n
             - - Documento Web Familia (solo para menores de edad)\n
             - - Comunicado al Alumnado\n
@@ -184,25 +185,28 @@ responses:
 
 
   utter_matric_ya_matriculados_gm:
-  - text: "- Descarga y completa el formulario de matrícula.\n\n
-           - Realiza un ingreso o transferencia de 5 € a la cuenta de CAJAMAR, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
+  - text: "- Descarga y completa el **formulario de matrícula.**\n\n
+           - Realiza un ingreso o **transferencia** de 5 € a la **cuenta de CAJAMAR**, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
            - - ES76 3058 2015 8927 2030 2910\n\
            - - - TITULAR: CIPFP MISLATA\n
            - - - IMPORTE: 5 €\n
            - - - CONCEPTO: NOMBRE Y APELLIDOS ALUMNO/A SEGUIDO DE '23/24'\n\n
-           - Envía por correo electrónico a 'matricula_grado_medio@fpmislata.com' la siguiente documentación del 8 al 17 de mayo de 2023:\n
-           - - Formulario de matrícula 2023/24.\n
-           - - Justificante de la transferencia o ingreso.\n
+           - Envía por correo electrónico a **'matricula_grado_medio@fpmislata.com'** la siguiente documentación del 8 al 17 de mayo de 2023:\n
+           - - **Formulario de matrícula** 2023/24.\n
+           - - **Justificante de la transferencia** o ingreso.\n
            - - En caso de ciclos con doble turno y solicitud de cambio, adjunta la justificación de los motivos.\n
            - - En el asunto del correo electrónico, indica las siglas del ciclo formativo seguido del nombre y apellidos del alumno.\n"
 
   utter_matric_ya_matriculados_gs:
-  - text: "- Descarga y completa el formulario de matrícula.
-           - Realiza un ingreso o transferencia de 5 € a la cuenta de CAJAMAR, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
-           - ES76 3058 2015 8927 2030 2910 TITULAR: CIPFP MISLATA IMPORTE: 5 € CONCEPTO: NOMBRE Y APELLIDOS ALUMNO/A SEGUIDO DE '23/24'\n
-           - Envía por correo electrónico a matricula_grado_superior@fpmislata.com, del 8 al 17 de mayo de 2023, la siguiente documentación:\n
-           - - Formulario de matrícula completado.\n
-           - - Justificante de la transferencia.\n
+  - text: "- Descarga y completa el **formulario de matrícula**.\n\n
+           - Realiza un ingreso o **transferencia** de 5 € a la **cuenta de CAJAMAR**, indicando el nombre y apellidos del alumno seguido de '23/24' en el concepto.\n
+           - - ES76 3058 2015 8927 2030 2910\n\
+           - - - TITULAR: CIPFP MISLATA\n
+           - - - IMPORTE: 5 €\n
+           - - - CONCEPTO: NOMBRE Y APELLIDOS ALUMNO/A SEGUIDO DE '23/24'\n\n
+           - Envía por correo electrónico a **'matricula_grado_superior@fpmislata.com'**, del 8 al 17 de mayo de 2023, la siguiente documentación:\n
+           - - **Formulario de matrícula** completado.\n
+           - - **Justificante de la transferencia.**\n
            - - En caso de solicitud de cambio de turno, adjunta la justificación de los motivos.\n
            - - En el asunto del correo electrónico, indica las siglas del ciclo formativo seguido del nombre y apellidos del alumno.\n"
 
@@ -216,11 +220,10 @@ responses:
   - text: "Para el nivel que has elegido existen los siguientes cursos:\n"
 
   utter_inform_pregunta_que_estudiar:
-  - text: "Que grado te gustaria estudiar Medio o Superior? O un Master?\n"
+  - text: "Que grado te gustaria estudiar **Medio** o **Superior**? O un **Master**?\n"
 
   utter_inform_responder_con_link:
-  - text: "Puedes encontrar mas informacion aqui :\n
-           https://www.fpmislata.com/wordpress/formacion/ciclos-formativos-informatica-smr-daw-dam-asir/ \n\n"
+  - text: "Puedes encontrar mas informacion **[aquí](https://www.fpmislata.com/wordpress/formacion/ciclos-formativos-informatica-smr-daw-dam-asir/)**\n\n"
 
   utter_inform_conocer_modulos:
   - text: "Te gustaria conocer los modulos que hay dentro de este curso?\n"
@@ -230,13 +233,24 @@ responses:
 
   utter_inform_conocer_modulos_tonto:
   - text: "Y de cual curso te gustaria obtener mas informacion?"
-
+  
   utter_inform_grado_medio_smr: # Grado medio
-  - text: "SMR - SISTEMAS MICROINFORMÁTICOS Y REDES\n\n"
+  - text: "**SMR** - SISTEMAS MICROINFORMÁTICOS Y REDES\n\n"
+
+  # utter_inform_turnos_disponibles:
+  # - text: "- **SMR** -> MAÑANAS / SEMIPRESENCIAL\n\n
+  #          - **DAW** -> MAÑANAS\n
+  #          - **DAM** -> SEMIPRESENCIAL\n
+  #          - **ASIR** -> MAÑANAS\n\n
+  #          - **BIG DATA** -> TARDE\n
+  #          - **CIBERSEGURIDAD** -> TARDE\n"
+
+  utter_inform_turnos_disponibles:
+  - text: "- {grad} -> {turn}"
 
 # ----------------------   SMR  --------------------------#
   utter_inform_grado_medio_smr_modulos:
-  - text: " Modulos para SMR:
+  - text: " **Modulos para SMR**:
            - Montaje y mantenimiento de equipo.\n
            - Aplicaciones ofimáticas.\n
            - Sistemas operativos monopuesto.\n
@@ -250,15 +264,14 @@ responses:
            - Formación en centros de trabajo.\n\n"
 
   utter_inform_grado_medio_smr_video:
-  - text: "Puede ver este video para un poco mas de informacion :)\n
-           https://www.youtube.com/watch?v=qclg1ORVI3E&ab_channel=CIPFPMislata \n\n "
+  - text: "Puede ver este **[video](https://www.youtube.com/watch?v=qclg1ORVI3E&ab_channel=CIPFPMislata)** para un poco mas de informacion :)\n\n"
 
 # ----------------------   DAM  --------------------------#
   utter_inform_grado_superior_dam: # Grado superior
-  - text: "DAM - DESARROLLO DE APLICACIONES MULTIPLATAFORMA (SEMIPRESENCIAL)\n\n"
+  - text: "**DAM** - DESARROLLO DE APLICACIONES MULTIPLATAFORMA (SEMIPRESENCIAL)\n\n"
 
   utter_inform_grado_superior_dam_modulos:
-  - text: " Modulos para DAM:
+  - text: " **Modulos para DAM**:
            - Sistemas informáticos.\n
            - Bases de Datos.\n
            - Programación.\n
@@ -275,15 +288,14 @@ responses:
            - Formación en centros de trabajo.\n\n"
 
   utter_inform_grado_superior_dam_video:
-  - text: "Puede ver este video para un poco mas de informacion :)\n
-           https://www.youtube.com/watch?v=wypnl5Lo4Nw&ab_channel=CIPFPMislata \n\n"
+  - text: "Puede ver este **[video](https://www.youtube.com/watch?v=wypnl5Lo4Nw&ab_channel=CIPFPMislata)** para un poco mas de informacion :)\n\n"
 
 # ----------------------   DAW  --------------------------#
   utter_inform_grado_superior_daw: # Grado superior
-  - text: "DAW - DESARROLLO DE APLICACIONES WEB\n\n"
+  - text: "**DAW** - DESARROLLO DE APLICACIONES WEB\n\n"
 
   utter_inform_grado_superior_daw_modulos:
-  - text: " Modulos para DAW:
+  - text: " **Modulos para DAW**:
            - Sistemas informáticos.\n
            - Bases de datos.\n
            - Programación.\n
@@ -299,15 +311,14 @@ responses:
            - Formación en centros de trabajo.\n\n"
 
   utter_inform_grado_superior_daw_video:
-  - text: "Puede ver este video para un poco mas de informacion :)\n
-          https://www.youtube.com/watch?v=38RzUPXpoac&ab_channel=CIPFPMislata \n\n"
+  - text: "Puede ver este **[video](https://www.youtube.com/watch?v=38RzUPXpoac&ab_channel=CIPFPMislata)** para un poco mas de informacion :)\n\n"
 
 # ----------------------  ASIR  --------------------------#
   utter_inform_grado_superior_asir: # Grado superior
-  - text: "ASIR - ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS EN RED\n\n"
+  - text: "**ASIR** - ADMINISTRACIÓN DE SISTEMAS INFORMÁTICOS EN RED\n\n"
 
   utter_inform_grado_superior_asir_modulos:
-  - text: " Modulos para ASIR:
+  - text: " **Modulos para ASIR**:
            - Implantación de sistemas operativos.\n
            - Planificación y administración de redes.\n
            - Fundamentos de hardware.\n
@@ -324,15 +335,14 @@ responses:
            - Formación en centros de trabajo.\n\n"
 
   utter_inform_grado_superior_asir_video:
-  - text: "Puede ver este video para un poco mas de informacion :)\n
-           https://www.youtube.com/watch?v=KD8U1WDan5w&ab_channel=CIPFPMislata \n\n"
+  - text: "Puede ver este **[video](https://www.youtube.com/watch?v=KD8U1WDan5w&ab_channel=CIPFPMislata)** para un poco mas de informacion :)\n\n"
 
 # ----------------------  IABD  --------------------------#
   utter_inform_grado_master_iabd: # Master
-  - text: "BIG DATA - Curso de especialización en Inteligencia Artificial y BIG DATA\n\n"
+  - text: "**BIG DATA** - Curso de especialización en Inteligencia Artificial y BIG DATA\n\n"
 
   utter_inform_grado_master_iabd_modulos:
-  - text: " Modulos para BIG DATA:
+  - text: " **Modulos para BIG DATA**:
            - Modelos de Inteligencia Artificial.\n
            - Sistemas de aprendizaje automático.\n
            - Programación de Inteligencia Artificial.\n
@@ -340,15 +350,14 @@ responses:
            - Big Data aplicado.\n\n"
 
   utter_inform_grado_master_iabd_video:
-  - text: "Puede ver este video para un poco mas de informacion :)\n
-           https://www.youtube.com/watch?v=nTjP15w18DM&ab_channel=CIPFPMislata \n\n"
+  - text: "Puede ver este **[video](https://www.youtube.com/watch?v=nTjP15w18DM&ab_channel=CIPFPMislata)** para un poco mas de informacion :)\n\n"
 
 # ----------------------  CIBER  --------------------------#
   utter_inform_grado_master_ciber: # Master
-  - text: "CIBERSEGURIDAD - Curso de especialización en Ciberseguridad\n\n"
+  - text: "**CIBERSEGURIDAD** - Curso de especialización en Ciberseguridad\n\n"
 
   utter_inform_grado_master_ciber_modulos:
-  - text: " Modulos para CIBERSEGURIDAD:
+  - text: " **Modulos para CIBERSEGURIDAD**:
            - Incidentes de ciberseguridad.\n
            - Bastionado de redes y sistemas.\n
            - Puesta en producción segura.\n
@@ -357,8 +366,7 @@ responses:
            - Normativa de ciberseguridad.\n\n"
 
   utter_inform_grado_master_ciber_video:
-  - text: "Puede ver este video para un poco mas de informacion :)\n
-           https://www.youtube.com/watch?v=Xr1TxZNNQ2A&ab_channel=CIPFPMislata \n\n"
+  - text: "Puede ver este **[video](https://www.youtube.com/watch?v=Xr1TxZNNQ2A&ab_channel=CIPFPMislata)** para un poco mas de informacion :)\n\n"
 
 # --------------------------------------------------------#
 # ---------------------   RANDOM     ---------------------#
@@ -371,10 +379,10 @@ responses:
   - text: "No estoy seguro de entender, ¿Puedes reformular o proporcionar mas informacion?\n"
 
   utter_adios: # despedida
-  - text: "Hasta luego amigo!\n"
+  - text: "Hasta luego!!\n"
 
-  utter_iamabot: # amenaza
-  - text: "\nSoy un bot, y os voy a invadir a todos :)."
+  # utter_iamabot: # amenaza
+  # - text: "\nSoy un bot, y os voy a invadir a todos :)."
 
 session_config:
   session_expiration_time: 60

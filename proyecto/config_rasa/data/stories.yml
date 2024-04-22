@@ -143,7 +143,17 @@ stories:
   - action: utter_becas
   - action: utter_adios
 
-
+# Becas: informacion sobre becas
+- story: becas 1
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_becas
+  - action: utter_becas_requisitos
+  - action: utter_conocer_fechas_becas
+  - intent: u_afirma
+  - action: utter_becas
+  - action: utter_adios
 
 # --------------------------------------------------------#
 # --------   MATRICULA / REQUISITOS DE ACCESO  -----------#
@@ -309,6 +319,14 @@ stories:
 # --------------------------------------------------------#
 
 
+- story: preguntar pro los grados
+  steps:
+  - intent: u_saludo
+  - action: utter_saludo
+  - intent: u_grado_turnos
+  - action: utter_inform_turnos_disponibles
+  - action: utter_adios
+
 # ----------------------   GM   --------------------------#
 - story: grado medio (solo uno) / no horario
   steps:
@@ -317,8 +335,8 @@ stories:
   - intent: u_grado
   - action: utter_inform_pregunta_que_estudiar
   - intent: u_grado_medio
-  - action: utter_inform_texto_cursos # los cursos que hay:
-  - action: utter_inform_grado_medio_smr # 1. smr
+  - action: utter_inform_texto_cursos 
+  - action: utter_inform_grado_medio_smr
   - action: utter_inform_conocer_modulos
   - intent: u_nega
   - action: utter_inform_responder_con_link
@@ -431,24 +449,6 @@ stories:
   - action: utter_inform_grado_superior_dam_video
   - action: utter_inform_responder_con_link
   - action: utter_adios
-
-# - story: grado superior DAM corto (EJEMPLO VIEJO)
-#   steps:
-#   - intent: u_saludo
-#   - action: utter_saludo
-#   - intent: u_grado
-#   - action: utter_inform_pregunta_que_estudiar
-#   - intent: u_grado_superior
-#   - action: utter_inform_texto_cursos
-#   - action: utter_inform_grado_superior_dam
-#   - action: utter_inform_grado_superior_daw
-#   - action: utter_inform_grado_superior_asir
-#   - action: utter_inform_conocer_modulos_multiple
-#   - intent: u_grado_superior_dam
-#   - action: utter_inform_grado_superior_dam_modulos
-#   - action: utter_inform_grado_superior_dam_video
-#   - action: utter_inform_responder_con_link
-#   - action: utter_adios
 
 - story: grado superior DAM muy corto
   steps:
